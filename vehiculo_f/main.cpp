@@ -41,10 +41,21 @@ public:
         
     }
 };
+class coche : public vehiculo{
+    int aux2;
+    void adelatar(){
+        aux2++;
+    }
+    void frenar(){
+        aux2--;
+    }
+    
+};
 int main(int argc, char** argv) {
-   vehiculo ferrari;
-   ferrari.crea("rojo", 100);
-   ferrari.estado();
+    coche ferri;
+    ferri.crea("Rojo", 200);
+    ferri.arrancar();
+    ferri.estado();
     return 0;
 }
 
