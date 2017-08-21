@@ -4,6 +4,7 @@
  *
  * Created on 3 de agosto de 2017, 11:29
  * Para hacer los calculos se ha de poner el 0 negativo lo que es 0 tiene que ser -1...........
+ * Pa
  */  
 #include <cstdlib>
 #include <stdio.h>
