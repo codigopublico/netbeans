@@ -16,10 +16,12 @@ using namespace std;
  * 
  */
 void imprime(string p2);
-void imprime(string  p2){
-    std::cout << p2;
+void imprime(string  p2[]){
+    for(int i = 0, p2 != "\0", i++){
+    std::cout << p2[i];
     std::cout << "\n";
     }
+}
 void doSomething(char charArray[])
 {
     char* p = charArray;
@@ -44,9 +46,7 @@ void p1(){
 }
 void p2(){
     string dia[] = { "Domingo", "Lunes", "Martes", "Miercoles", "Jueves", "Viernes", "Sabado" };
-    for(int i = 0; i < 7; i++){
-    imprime(dia[i]);
-    }
+    imprime(dia[]);
 }
 int main(int argc, char** argv) {
     p1();
