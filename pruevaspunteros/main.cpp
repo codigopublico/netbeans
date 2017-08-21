@@ -14,8 +14,8 @@ using namespace std;
 /*
  * 
  */
-void imprime(char *p2 );
-void imprime(char  *p2){
+void imprime(char p2 );
+void imprime(char  p2){
     for ( ; *p2 != '\0'; p2++  ){
         std::cout << std::endl << *p2;
         }
