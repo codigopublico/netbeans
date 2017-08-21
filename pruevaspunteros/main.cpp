@@ -7,7 +7,6 @@
 
 #include <cstdlib>
 #include <iostream>
-#include <string>
 
 using namespace std;
 
@@ -41,10 +40,11 @@ void p1(){
     std::cout << std::endl << *p << "\n";
 }
 void p2(){
-    char  *dia[10][7] = { "Domingo", "Lunes", "Martes", "Miercoles", "Jueves", "Viernes", "Sabado" };
+    char  *dia[7] = { "Domingo", "Lunes", "Martes", "Miercoles", "Jueves", "Viernes", "Sabado" };
     doSomething( *dia);
-    dia++;
+    *dia++;
     doSomething( *dia);
+    
 }
 int main(int argc, char** argv) {
     p1();
