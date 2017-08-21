@@ -42,6 +42,9 @@ void p1(){
 void p2(){
     char  *dia[7] = { "Domingo", "Lunes", "Martes", "Miercoles", "Jueves", "Viernes", "Sabado" };
     doSomething( *dia);
+    dia++;
+    doSomething( *dia);
+    
 }
 int main(int argc, char** argv) {
     p1();
