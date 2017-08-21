@@ -20,9 +20,8 @@ void imprime(const char  *p2){
         }
     std::cout << "\n";
     }
-void doSomething(char charArray[])
+void doSomething(char* p)
 {
-    char* p = charArray;
     for (; *p != '\0'; ++p)
     {
          // if '\0' happens to be valid data for your app, 
@@ -41,10 +40,8 @@ void p1(){
     std::cout << std::endl << *p << "\n";
 }
 void p2(){
-    char  dia[7] = { "Domingo", "Lunes", "Martes", "Miercoles", "Jueves", "Viernes", "Sabado" };
-    for(int i = 0; i < 7; i++){
-    doSomething( dia);
-    }
+    char  *dia[7] = { "Domingo", "Lunes", "Martes", "Miercoles", "Jueves", "Viernes", "Sabado" };
+    doSomething( *dia);
 }
 int main(int argc, char** argv) {
     p1();
