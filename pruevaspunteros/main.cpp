@@ -16,9 +16,7 @@ using namespace std;
  */
 void imprime(char p2 );
 void imprime(char  p2){
-    for ( ; *p2 != '\0'; p2++  ){
-        std::cout << std::endl << *p2;
-        }
+    std::cout << p2;
     std::cout << "\n";
     }
 void doSomething(char charArray[])
@@ -44,9 +42,9 @@ void p1(){
     std::cout << std::endl << *p << "\n";
 }
 void p2(){
-    char dia[10][7] = { "Domingo", "Lunes", "Martes", "Miercoles", "Jueves", "Viernes", "Sabado" };
+    char *dia[10][7] = { "Domingo", "Lunes", "Martes", "Miercoles", "Jueves", "Viernes", "Sabado" };
     for(int i = 0; i < 7; i++){
-    imprime(dia[i][i]);
+    imprime(*dia[i][i]);
     }
 }
 int main(int argc, char** argv) {
