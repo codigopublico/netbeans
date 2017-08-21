@@ -46,7 +46,7 @@ void p1(){
 void p2(){
     char *dia[10][7] = { "Domingo", "Lunes", "Martes", "Miercoles", "Jueves", "Viernes", "Sabado" };
     for(int i = 0; i < 7; i++){
-    imprime( *dia[i]);
+    imprime( *dia[i][i]);
     }
 }
 int main(int argc, char** argv) {
