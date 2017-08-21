@@ -17,7 +17,9 @@ using namespace std;
  */
 void imprime(string p2[]);
 void imprime(string  p2[]){
-    for(int i = 0, p2[i] != "\0", i++){
+    int i = 0;
+    while(i<7){
+        i++;
     std::cout << p2[i];
     std::cout << "\n";
     }
