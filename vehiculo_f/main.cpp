@@ -18,14 +18,28 @@ class vehiculo{
 public:
     string color;
     int pot;
+    int aux = 0;
     void crea(string c, int p){
         color = c;
         p = pot;
+    }
+    void arrancar(){
+        aux = 1;
+    }
+    void parar(){
+        aux = 0;
+    }
+    void adelatar(){
+        std::cout << "El Vehiculo a adelantado";
+    }
+    void estado(){
+        std::cout << "El color es ..." << color;
     }
 };
 int main(int argc, char** argv) {
    vehiculo ferrari;
    ferrari.crea("rojo", 100);
+   ferrari.estado();
     return 0;
 }
 
