@@ -45,7 +45,6 @@ void p2(){
     doSomething( *dia);
     dia++;
     doSomething( *dia);
-    
 }
 int main(int argc, char** argv) {
     p1();
