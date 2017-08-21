@@ -14,7 +14,7 @@ using namespace std;
 /*
  * 
  */
-void imprime(char p2 );
+void imprime(string p2 );
 void imprime(string  p2){
     std::cout << p2;
     std::cout << "\n";
@@ -44,7 +44,6 @@ void p1(){
 void p2(){
     const string *dia[7] = { "Domingo", "Lunes", "Martes", "Miercoles", "Jueves", "Viernes", "Sabado" };
     for(int i = 0; i < 7; i++){
-        *dia++;
     imprime(*dia);
     }
 }
