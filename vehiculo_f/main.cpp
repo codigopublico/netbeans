@@ -33,7 +33,12 @@ public:
         std::cout << "El Vehiculo a adelantado";
     }
     void estado(){
-        std::cout << "El color es ..." << color;
+        if (aux == 0){
+        std::cout << "El vehiculo esta parado";
+        }else{
+            std::cout << "El vehiculo esta arrancado";
+        }
+        
     }
 };
 int main(int argc, char** argv) {
