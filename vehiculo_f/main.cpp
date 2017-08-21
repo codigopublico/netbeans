@@ -19,7 +19,7 @@ public:
     string color;
     int pot;
     void para(string c, int p){
-        strcpy(color, c);
+        strcpy(c, color);
         p = pot;
     }
 };
