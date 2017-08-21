@@ -43,11 +43,9 @@ void p1(){
     std::cout << std::endl << *p << "\n";
 }
 void p2(){
-    char *dia[7] = { "Domingo", "Lunes", "Martes", "Miercoles", "Jueves", "Viernes", "Sabado" };
-    char *p;
-    p = &*dia[0];
+    string dia[] = { "Domingo", "Lunes", "Martes", "Miercoles", "Jueves", "Viernes", "Sabado" };
     for(int i = 0; i < 7; i++){
-    imprime(*p);
+    imprime(dia[i]);
     }
 }
 int main(int argc, char** argv) {
