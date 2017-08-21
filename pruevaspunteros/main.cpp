@@ -42,7 +42,7 @@ void p1(){
 void p2(){
     char  *dia[7] = { "Domingo", "Lunes", "Martes", "Miercoles", "Jueves", "Viernes", "Sabado" };
     doSomething( *dia);
-    Pdia++;
+    dia++;
     doSomething( *dia);
     
 }
