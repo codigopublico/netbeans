@@ -43,8 +43,11 @@ void p1(){
 }
 void p2(){
     const char *dia[7] = { "Domingo", "Lunes", "Martes", "Miercoles", "Jueves", "Viernes", "Sabado" };
+    char *p;
+    *p = &dia[0];
     for(int i = 0; i < 7; i++){
-    imprime(*dia);
+        p++;
+    imprime(*p);
     }
 }
 int main(int argc, char** argv) {
