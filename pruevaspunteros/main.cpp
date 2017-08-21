@@ -20,8 +20,9 @@ void imprime(const char  *p2){
         }
     std::cout << "\n";
     }
-void doSomething(char* p)
+void doSomething(char charArray[])
 {
+    char* p = charArray;
     for (; *p != '\0'; ++p)
     {
          // if '\0' happens to be valid data for your app, 
@@ -29,6 +30,8 @@ void doSomething(char* p)
          // sentinel
         std::cout << *p;
     }
+    int arraySize = p - charArray;
+
     // now we know the array size, so we can do some thing
 }
 void p1(){
@@ -40,11 +43,12 @@ void p1(){
     std::cout << std::endl << *p << "\n";
 }
 void p2(){
-    char  *dia[7] = { "Domingo", "Lunes", "Martes", "Miercoles", "Jueves", "Viernes", "Sabado" };
-    doSomething( *dia);
-    *dia++;
-    doSomething( *dia);
-    
+    char *dia[7] = { "Domingo", "Lunes", "Martes", "Miercoles", "Jueves", "Viernes", "Sabado" };
+    char *dias;
+    for(int i = 0; i < 7; i++){
+        *dia++;
+    imprimir( *dia);
+    }
 }
 int main(int argc, char** argv) {
     p1();
