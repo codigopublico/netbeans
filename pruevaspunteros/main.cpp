@@ -8,6 +8,7 @@
 #include <cstdlib>
 #include <iostream>
 #include <string>
+#include <stdio.h>
 
 using namespace std;
 
@@ -15,8 +16,8 @@ using namespace std;
  * 
  */
 void imprime(string p2 );
-void imprime(string  p2){
-    std::cout << p2;
+void imprime(string  p2[]){
+    std::cout << p2[3];
     std::cout << "\n";
     }
 void doSomething(char charArray[])
@@ -42,12 +43,9 @@ void p1(){
     std::cout << std::endl << *p << "\n";
 }
 void p2(){
-    const char *dia[7] = { "Domingo", "Lunes", "Martes", "Miercoles", "Jueves", "Viernes", "Sabado" };
-    char *p;
-    *p = &dia[0];
+    char *dia[7] = { "Domingo", "Lunes", "Martes", "Miercoles", "Jueves", "Viernes", "Sabado" };
     for(int i = 0; i < 7; i++){
-        p++;
-    imprime(*p);
+    imprime(*dia[]);
     }
 }
 int main(int argc, char** argv) {
