@@ -43,10 +43,10 @@ void p1(){
     std::cout << std::endl << *p << "\n";
 }
 void p2(){
-    char[7] dia = { "Domingo", "Lunes", "Martes", "Miercoles", "Jueves", "Viernes", "Sabado" };
+    char  *dia[7] = { "Domingo", "Lunes", "Martes", "Miercoles", "Jueves", "Viernes", "Sabado" };
     //char *dias;
     for(int i = 0; i < 7; i++){
-    doSomething( dia);
+    doSomething( *dia);
     }
 }
 int main(int argc, char** argv) {
