@@ -41,7 +41,7 @@ void p1(){
     std::cout << std::endl << *p << "\n";
 }
 void p2(){
-    string  *dia[7] = { "Domingo", "Lunes", "Martes", "Miercoles", "Jueves", "Viernes", "Sabado" };
+    char  *dia[10][7] = { "Domingo", "Lunes", "Martes", "Miercoles", "Jueves", "Viernes", "Sabado" };
     doSomething( *dia);
     dia++;
     doSomething( *dia);
