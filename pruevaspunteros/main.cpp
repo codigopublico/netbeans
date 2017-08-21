@@ -19,9 +19,9 @@ void imprime(string p2[]);
 void imprime(string  p2[]){
     int i = 0;
     while(i<7){
-        i++;
     std::cout << p2[i];
     std::cout << "\n";
+    i++;
     }
 }
 void doSomething(char charArray[])
