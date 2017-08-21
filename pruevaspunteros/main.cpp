@@ -30,8 +30,6 @@ void doSomething(char charArray[])
          // sentinel
         std::cout << *p;
     }
-    int arraySize = p - charArray;
-
     // now we know the array size, so we can do some thing
 }
 void p1(){
@@ -43,10 +41,9 @@ void p1(){
     std::cout << std::endl << *p << "\n";
 }
 void p2(){
-    char  *dia[7] = { "Domingo", "Lunes", "Martes", "Miercoles", "Jueves", "Viernes", "Sabado" };
-    //char *dias;
+    char  dia[7] = { "Domingo", "Lunes", "Martes", "Miercoles", "Jueves", "Viernes", "Sabado" };
     for(int i = 0; i < 7; i++){
-    doSomething( *dia);
+    doSomething( dia);
     }
 }
 int main(int argc, char** argv) {
