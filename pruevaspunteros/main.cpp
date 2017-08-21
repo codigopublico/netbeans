@@ -42,9 +42,8 @@ void p1(){
     std::cout << std::endl << *p << "\n";
 }
 void p2(){
-    char *dia[7] = { "Domingo", "Lunes", "Martes", "Miercoles", "Jueves", "Viernes", "Sabado" };
+    const char *dia[7] = { "Domingo", "Lunes", "Martes", "Miercoles", "Jueves", "Viernes", "Sabado" };
     for(int i = 0; i < 7; i++){
-        *dia++;
     imprime(*dia);
     }
 }
