@@ -18,14 +18,14 @@ class vehiculo{
 public:
     string color;
     int pot;
-    void para(string c, int p){
-        strcpy(c, color);
+    void crea(string c, int p){
+        color = c;
         p = pot;
     }
 };
 int main(int argc, char** argv) {
    vehiculo ferrari;
-   ferrari.para("rojo", 100);
+   ferrari.crea("rojo", 100);
     return 0;
 }
 
