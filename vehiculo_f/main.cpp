@@ -6,14 +6,26 @@
  */
 
 #include <cstdlib>
-
+#include <iostream>
+#include <string>
+#include <string.h>
 using namespace std;
 
 /*
  * 
  */
+class vehiculo{
+public:
+    string color;
+    int pot;
+    void para(string c, int p){
+        strcpy(color, c);
+        p = pot;
+    }
+};
 int main(int argc, char** argv) {
-
+   vehiculo ferrari;
+   ferrari.para("rojo", 100);
     return 0;
 }
 
