@@ -37,13 +37,26 @@ public:
         return baux;
     }
 };
+class valvulas{
+public:
+    int vaux;
+    void abre(){
+        vaux = 1;
+        std::cout << "\nAbriendo las valvulas\n";
+        
+    }
+    int get(){
+        return vaux;
+    }
+};
 class motor:private arbol, bujias{
 public:
     int arra; //Variable que indica si el motor esta arrancado
     void arrancar(){
         Oaux.lubi();
+        Oaux3.abre();
         Oaux2.pren();
-        if(Oaux2.get() == 1 && Oaux.get() == 1){
+        if(Oaux2.get() == 1 && Oaux.get() == 1 && Oaux3.get() == 1){
             arra = 1;
             std::cout << "\nEl choche a arrancado\n";
         }else{
@@ -53,6 +66,7 @@ public:
 private:
     arbol Oaux;
     bujias Oaux2;
+    valvulas Oaux3;
 };
 class vehiculo{
 public:
