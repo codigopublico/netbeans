@@ -39,8 +39,14 @@ public:
 class motor:private arbol, bujias{
 public:
     int arra; //Variable que indica si el motor esta arrancado
+    arbol Oaux;
+    bujias Oaux2;
     void arrancar(){
-        
+        Oaux.lubi();
+        Oaux2.pren();
+        if(Oaux2.get() == 1 && Oaux.get() == 1){
+            arra = 1;
+        }
     }
 };
 class vehiculo{
