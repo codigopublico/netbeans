@@ -16,24 +16,24 @@ using namespace std;
  */
 class arbol{
 public:
-    int aux1;
+    int aaux1;
     lubi(){
-        aux1 = 1;
+        aaux1 = 1;
         std::cout << "lubricando el arbol de levas";
     }
     get(){
-        return aux1;
+        return aaux1;
     }
 };
 class bujias{
 public:
-    int aux;
+    int baux;
     pren(){
-        aux = 1;//hacer la funcion rand.
+        baux = 1;//hacer la funcion rand.
         std::cout << "Haciendo la chispa al motor";
     }
     get(){
-        return aux;
+        return baux;
     }
 };
 class motor:private arbol, bujias{
