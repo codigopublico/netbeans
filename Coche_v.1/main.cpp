@@ -16,33 +16,33 @@ using namespace std;
  */
 class arbol{
 public:
-    int aux2;
-    lub(){
-        aux2 = 1;
+    int aux1;
+    lubi(){
+        aux1 = 1;
         std::cout << "lubricando el arbol de levas";
     }
-    gets(){
-        return aux2;
+    get(){
+        return aux1;
     }
 };
 class bujias{
 public:
     int aux;
-    pre(){
+    pren(){
         aux = 1;//hacer la funcion rand.
         std::cout << "Haciendo la chispa al motor";
     }
-    gets(){
+    get(){
         return aux;
     }
 };
-class motor:public arbol, bujias{
+class motor:private arbol, bujias{
 public:
     int arra; //Variable que indica si el motor esta arrancado
     void arrancar(){
-        arbol.lub();
-        bujias.pre();
-        if(arbol.gets() == 1 && bujias.gets() == 1){
+        arbol.lubi();
+        bujias.pren();
+        if(arbol.get() == 1 && bujias.get() == 1){
             arra = 1;
         }
     }
