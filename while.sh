@@ -1,4 +1,4 @@
-while [ 1 == 1  ]; do
-./sbirgit.sh  "while"
+while [ True  ]; do
+/./home/prog/NetBeansProjects/sbirgit.sh  "while"
 sleep 60
 done
