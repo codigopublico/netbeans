@@ -59,6 +59,7 @@ class velocimetro{
     }
 };
 class revol{
+public:
     int rev;
     void setrev(int r){
         rev = r;
