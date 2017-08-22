@@ -9,6 +9,7 @@
 #include <iostream>
 #include <string>
 #include <string.h>
+#include <stdlib.h>
 using namespace std;
 
 /*
@@ -29,7 +30,7 @@ class bujias{
 public:
     int baux;
     void pren(){
-        baux = 1;//hacer la funcion rand.
+        baux = rand()%2;//hacer la funcion rand.
         std::cout << "\nHaciendo la chispa al motor\n";
     }
     int get(){
@@ -44,6 +45,7 @@ public:
         Oaux2.pren();
         if(Oaux2.get() == 1 && Oaux.get() == 1){
             arra = 1;
+            std::cout << "El choche a arrancado";
         }
     }
 private:
