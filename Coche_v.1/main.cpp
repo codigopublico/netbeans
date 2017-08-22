@@ -43,7 +43,7 @@ public:
     void arrancar(){
         Oaux.lubi();
         Oaux2.pren();
-        if(Oaux2.get() == 1 || Oaux.get() == 1){
+        if(Oaux2.get() == 1 && Oaux.get() == 1){
             arra = 1;
             std::cout << "El choche a arrancado";
         }
