@@ -14,6 +14,39 @@ using namespace std;
 /*
  * 
  */
+class arbol{
+public:
+    int aux;
+    lub(){
+        aux = 1;
+        std::cout << "lubricando el arbol de levas";
+    }
+    gets(){
+        return aux;
+    }
+};
+class bujias{
+public:
+    int aux;
+    pre(){
+        aux = 1;//hacer la funcion rand.
+        std::cout << "Haciendo la chispa al motor";
+    }
+    gets(){
+        return aux;
+    }
+};
+class motor{
+public:
+    int arra; //Variable que indica si el motor esta arrancado
+    void arrancar(){
+        arbol.lub();
+        bujias.pre();
+        if(arbol.gets() == 1 && bujias.gets() == 1){
+            arra = 1;
+        }
+    }
+};
 class vehiculo{
 public:
     string color;
@@ -56,6 +89,8 @@ int main(int argc, char** argv) {
     ferri.crea("Rojo", 200);
     ferri.arrancar();
     ferri.estado();
+    motor prueva;
+    prueva.arrancar();
     return 0;
 }
 

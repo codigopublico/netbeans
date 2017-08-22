@@ -24,7 +24,7 @@ CLEAN_SUBPROJECTS=${CLEAN_SUBPROJECTS_${SUBPROJECTS}}
 
 
 # Project Name
-PROJECTNAME=vehiculo_f
+PROJECTNAME=Coche_v.1
 
 # Active Configuration
 DEFAULTCONF=Debug

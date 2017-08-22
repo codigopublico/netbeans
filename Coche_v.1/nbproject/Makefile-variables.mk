@@ -9,19 +9,19 @@ CND_DISTDIR=dist
 # Debug configuration
 CND_PLATFORM_Debug=GNU-Linux-x86
 CND_ARTIFACT_DIR_Debug=dist/Debug/GNU-Linux-x86
-CND_ARTIFACT_NAME_Debug=vehiculo_f
-CND_ARTIFACT_PATH_Debug=dist/Debug/GNU-Linux-x86/vehiculo_f
+CND_ARTIFACT_NAME_Debug=coche_v.1
+CND_ARTIFACT_PATH_Debug=dist/Debug/GNU-Linux-x86/coche_v.1
 CND_PACKAGE_DIR_Debug=dist/Debug/GNU-Linux-x86/package
-CND_PACKAGE_NAME_Debug=vehiculof.tar
-CND_PACKAGE_PATH_Debug=dist/Debug/GNU-Linux-x86/package/vehiculof.tar
+CND_PACKAGE_NAME_Debug=cochev.1.tar
+CND_PACKAGE_PATH_Debug=dist/Debug/GNU-Linux-x86/package/cochev.1.tar
 # Release configuration
 CND_PLATFORM_Release=GNU-Linux-x86
 CND_ARTIFACT_DIR_Release=dist/Release/GNU-Linux-x86
-CND_ARTIFACT_NAME_Release=vehiculo_f
-CND_ARTIFACT_PATH_Release=dist/Release/GNU-Linux-x86/vehiculo_f
+CND_ARTIFACT_NAME_Release=coche_v.1
+CND_ARTIFACT_PATH_Release=dist/Release/GNU-Linux-x86/coche_v.1
 CND_PACKAGE_DIR_Release=dist/Release/GNU-Linux-x86/package
-CND_PACKAGE_NAME_Release=vehiculof.tar
-CND_PACKAGE_PATH_Release=dist/Release/GNU-Linux-x86/package/vehiculof.tar
+CND_PACKAGE_NAME_Release=cochev.1.tar
+CND_PACKAGE_PATH_Release=dist/Release/GNU-Linux-x86/package/cochev.1.tar
 #
 # include compiler specific variables
 #
