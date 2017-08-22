@@ -200,6 +200,7 @@ int main(int argc, char** argv) {
     prueva.arrancar();
     intrumentos prueva2;
     prueva2.botones(1, 2);
+    prueva2.panel();
     return 0;
 }
 
