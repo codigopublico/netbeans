@@ -30,7 +30,7 @@ class bujias{
 public:
     int baux;
     void pren(){
-        baux = rand()%2;//hacer la funcion rand.
+        baux = 0;//hacer la funcion rand.
         std::cout << "\nHaciendo la chispa al motor\n";
     }
     int get(){
