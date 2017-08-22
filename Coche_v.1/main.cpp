@@ -36,7 +36,7 @@ public:
         return aux;
     }
 };
-class motor{
+class motor:private arbol, bujias{
 public:
     int arra; //Variable que indica si el motor esta arrancado
     void arrancar(){
