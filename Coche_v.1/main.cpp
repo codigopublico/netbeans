@@ -30,7 +30,7 @@ class bujias{
 public:
     int baux;
     void pren(){
-        baux = 0;//hacer la funcion rand.
+        baux = rand()%2;//hacer la funcion rand.
         std::cout << "\nHaciendo la chispa al motor\n";
     }
     int get(){
@@ -46,6 +46,8 @@ public:
         if(Oaux2.get() == 1 && Oaux.get() == 1){
             arra = 1;
             std::cout << "El choche a arrancado";
+        }else{
+            std::cout << "El coche no arranca dale de nuevo";
         }
     }
 private:
