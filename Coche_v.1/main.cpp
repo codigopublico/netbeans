@@ -50,6 +50,7 @@ public:
     }
 };
 class velocimetro{
+public:
     int vel;
     void setvel(int v){
         vel = v;
@@ -101,6 +102,7 @@ class leds{
 public:
     int tra;//Leds traceros
     int del;//leds delanteros
+    int aux[2];
     void traceros(int a){
         if(a > 0){
             tra = 1;
@@ -118,7 +120,6 @@ public:
         
     }
     int mos(){
-        int aux[2];
         aux[0] = del;
         aux[1] = tra;
         return aux;
