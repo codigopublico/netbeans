@@ -49,7 +49,93 @@ public:
         return vaux;
     }
 };
-class motor:private arbol, bujias{
+class velocimetro{
+    int vel;
+    void setvel(int v){
+        vel = v;
+    }
+    int get(){
+        return vel;
+    }
+};
+class revol{
+    int rev;
+    void setrev(int r){
+        rev = r;
+    }
+    void get(){
+        return rev;
+    }
+};
+class bombilla{
+public:
+    int enceder(){
+        std::cout << "La bombilla esta encida";
+    }
+    int apagar(){
+        std::cout << "La bombilla esta apaga";
+    }
+};
+class reles{
+public:
+    int aux;
+    void enceder(){
+        aux = 1;
+    }
+    void apagar(){
+        aux = 0;
+    }
+    int get(){
+        if(aux == 1){
+            Obom.enceder();
+        }else{
+            Obom.apagar();
+        }
+        return aux;
+    }
+private:
+    bombilla Obom;
+};
+class leds{
+public:
+    int tra;//Leds traceros
+    int del;//leds delanteros
+    void traceros(int a){
+        if(a > 0){
+            tra = 1;
+        }else{
+            tra = 0;
+        }
+        
+    }
+    void delanteros(int a){
+        if(a > 0){
+            del = 1;
+        }else{
+            del = 0;
+        }
+        
+    }
+    int mos(){
+        int aux[2];
+        aux[0] = del;
+        aux[1] = tra;
+        return aux;
+    }
+    
+private:
+    reles Orel;
+};
+class intrumentos : public leds, revol, velocimetro{
+public:
+    void panel(){
+        std::cout << "El led delatera esta " << aux[0] << "El led trasero esta " << aux[1];
+        std::cout << "El panel de revoluciones mustra " <<  rev;
+        std::cout << "El panel de velocidad muestra  " << vel;
+    }
+    
+};
+class motor{
 public:
     int arra; //Variable que indica si el motor esta arrancado
     void arrancar(){
