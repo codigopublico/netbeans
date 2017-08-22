@@ -16,13 +16,13 @@ using namespace std;
  */
 class arbol{
 public:
-    int aux;
+    int aux2;
     lub(){
-        aux = 1;
+        aux2 = 1;
         std::cout << "lubricando el arbol de levas";
     }
     gets(){
-        return aux;
+        return aux2;
     }
 };
 class bujias{
@@ -36,7 +36,7 @@ public:
         return aux;
     }
 };
-class motor:private arbol, bujias{
+class motor:public arbol, bujias{
 public:
     int arra; //Variable que indica si el motor esta arrancado
     void arrancar(){
