@@ -17,22 +17,22 @@ using namespace std;
 class arbol{
 public:
     int aaux1;
-    lubi(){
+    void lubi(){
         aaux1 = 1;
         std::cout << "lubricando el arbol de levas";
     }
-    get(){
+    int get(){
         return aaux1;
     }
 };
 class bujias{
 public:
     int baux;
-    pren(){
+    void pren(){
         baux = 1;//hacer la funcion rand.
         std::cout << "Haciendo la chispa al motor";
     }
-    get(){
+    int get(){
         return baux;
     }
 };
