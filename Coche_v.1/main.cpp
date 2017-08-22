@@ -65,7 +65,7 @@ public:
     void setrev(int r){
         rev = r;
     }
-    void get(){
+    int get(){
         return rev;
     }
 };
@@ -102,7 +102,6 @@ class leds{
 public:
     int tra;//Leds traceros
     int del;//leds delanteros
-    int aux[2];
     void traceros(int a){
         if(a > 0){
             tra = 1;
@@ -119,11 +118,6 @@ public:
         }
         
     }
-    int mos(){
-        aux[0] = del;
-        aux[1] = tra;
-        return aux;
-    }
     
 private:
     reles Orel;
@@ -131,9 +125,13 @@ private:
 class intrumentos : public leds, revol, velocimetro{
 public:
     void panel(){
-        std::cout << "El led delatera esta " << aux[0] << "El led trasero esta " << aux[1];
+        std::cout << "El led delatera esta " << del << "El led trasero esta " << tra;
         std::cout << "El panel de revoluciones mustra " <<  rev;
         std::cout << "El panel de velocidad muestra  " << vel;
+    }
+    void botones(int d, int t){
+        del = d;
+        tra = t;
     }
     
 };
@@ -200,6 +198,8 @@ int main(int argc, char** argv) {
     ferri.estado();
     motor prueva;
     prueva.arrancar();
+    intrumentos prueva2;
+    prueva2.botones(1, 2);
     return 0;
 }
 
