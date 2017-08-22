@@ -19,7 +19,7 @@ public:
     int aaux1;
     void lubi(){
         aaux1 = 1;
-        std::cout << "lubricando el arbol de levas";
+        std::cout << "\nlubricando el arbol de levas\n";
     }
     int get(){
         return aaux1;
@@ -30,7 +30,7 @@ public:
     int baux;
     void pren(){
         baux = 1;//hacer la funcion rand.
-        std::cout << "Haciendo la chispa al motor";
+        std::cout << "\nHaciendo la chispa al motor\n";
     }
     int get(){
         return baux;
@@ -39,8 +39,6 @@ public:
 class motor:private arbol, bujias{
 public:
     int arra; //Variable que indica si el motor esta arrancado
-    arbol Oaux;
-    bujias Oaux2;
     void arrancar(){
         Oaux.lubi();
         Oaux2.pren();
@@ -48,6 +46,9 @@ public:
             arra = 1;
         }
     }
+private:
+    arbol Oaux;
+    bujias Oaux2;
 };
 class vehiculo{
 public:
