@@ -19,26 +19,22 @@ void impestados(int a){
 }
 class alimentos{
 public:
-    int aux[6] = 1;
+    int aux[5] = 1;
     //propiedades del alimento
     int prot = 0;
     int gras = 0;
     int hidra = 0;
     int cali = 0;
     void frie(){
-        estado = 0;
         aux[0] = 1;
     }
     void asa(){
-        estado = 1;
         aux[1] = 1;
     }
     void come(){
-        estado = 2;
         aux[2] = 1;
     }
     void pela(){
-        estado = 3;
         aux[3] = 1;
     }
     void estados(){
@@ -48,8 +44,7 @@ public:
                 impestados(i);
             }}
     }
-private:
-    int aux[5];
+
 };
 class Gisantes : public alimentos{
 
