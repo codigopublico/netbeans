@@ -34,7 +34,7 @@ public:
                 aux3 = 0;
             }
             for(int i = 0; i < aux; i++){
-                std::cout << "aux3: " << aux3;
+                std::cout << "aux3: " << aux2[i];
             }
     }
     void Tiempo(){
