@@ -21,7 +21,21 @@ public:
         aux++;
     }
     void personas(int a){
-       
+            int cal = 20;
+            int aux3 = 0;
+            cal = cal * a;
+            cal = cal /aux;
+            for(int i = 0; i < aux; i++){
+                while(aux2[i] > cal){
+                    aux[i] = aux[i];
+                    aux3++;
+            }
+                aux[i] = aux3;
+                aux3 = 0;
+            }
+            for(int i = 0; i < aux; i++){
+                std::cout << "aux3: " << aux3;
+            }
     }
     void Tiempo(){
         
@@ -38,6 +52,7 @@ int main(int argc, char** argv) {
     recetas gazpacho;
     gazpacho.ingredientes(lechuga.cal());
     gazpacho.ingredientes(salmon.cal());
+    gazpacho.personas(3);
     return 0;
 }
 
