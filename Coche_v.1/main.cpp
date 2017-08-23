@@ -177,7 +177,7 @@ private:
     bujias Oaux2;
     valvulas Oaux3;
 };
-class vehiculo : public intrumentos, motor{
+class vehiculo : public motor, intrumentos{
 public:
     string color;
     int pot;
@@ -213,7 +213,7 @@ int main(int argc, char** argv) {
     ferri.estado();
     ferri.botones(1, 1);
     ferri.acce();
-    ferri.adelatar();
+    ferri.free();
     ferri.panel();
     return 0;
 }
