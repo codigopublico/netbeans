@@ -90,11 +90,6 @@ class ternera : public carnes{
     
 };
 int main(int argc, char** argv) {
-    judias nada;
-    nada.estado();
-    return 0;
-}
-int main() {
     alimentos prueva;
     prueva.estados();
 }
