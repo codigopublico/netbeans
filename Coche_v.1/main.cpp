@@ -147,6 +147,7 @@ public:
             std::cout << "\nEl choche a arrancado\n";
         }else{
             std::cout << "\nEl coche no arranca dale de nuevo\n";
+            arra = 0;
         }
     }
         void acce(){
@@ -220,6 +221,7 @@ int main(int argc, char** argv) {
     ferri.arrancar();
     ferri.estado();
     ferri.botones(1, 1);
+    ferri.adelatar();
     ferri.adelatar();
     ferri.panel();
     return 0;
