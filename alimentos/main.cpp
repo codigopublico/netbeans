@@ -15,7 +15,7 @@ using namespace std;
  */
 class alimentos{
 public:
-    string estado[] = { "firto", "asado", "comido", "pelado", "crudo"};
+    string estado[] = ["frie", "asa", "come", "pela", "crudo" ];
     //propiedades del alimento
     int prot;
     int gras;
