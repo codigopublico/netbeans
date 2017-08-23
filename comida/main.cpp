@@ -14,7 +14,7 @@ using namespace std;
  * 
  */
 void impestados(int a){
-    string estado[] ={"frito", "comido", "pelado", "asado", "crudo" };
+    string estado[] ={"frito", "asado", "pelado", "comido", "crudo" };
     std::cout << "El alimento esta " << estado[a] << "\n";
 }
 class alimentos{
