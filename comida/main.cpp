@@ -19,12 +19,12 @@ void impestados(int a){
 }
 class alimentos{
 public:
-    int aux[5] = 1;
+    int aux[5];
     //propiedades del alimento
-    int prot = 0;
-    int gras = 0;
-    int hidra = 0;
-    int cali = 0;
+    int prot;
+    int gras;
+    int hidra;
+    int cali;
     void frie(){
         aux[0] = 1;
     }
