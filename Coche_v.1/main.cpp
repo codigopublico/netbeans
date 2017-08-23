@@ -3,6 +3,7 @@
  * Author: prog
  *
  * Created on 21 de agosto de 2017, 17:03
+ * Revisar la herencia multimple
  */
 
 #include <cstdlib>
