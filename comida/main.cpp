@@ -41,7 +41,7 @@ public:
     void estados(){
         std::cout << "Tiene " << prot << " proteinas \n";
         ii = 0;
-        for(int i = 0; i < 5; i++){
+        for(int i = 0; i < 4; i++){
             if(aux[i] == 1){
                 impestados(i);
             }else{
@@ -110,6 +110,8 @@ class ternera : public carnes{
 int main(int argc, char** argv) {
     verduras prueva;
     prueva.iniciar();
+    prueva.estados();
+    prueva.frie();
     prueva.estados();
 }
 
