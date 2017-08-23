@@ -93,6 +93,7 @@ public:
     gras = 0;
     hidra = 0;
     cali = 0;
+    aux[] = [0, 0, 0, 0];
     }
 };
 class judias : public verduras{
