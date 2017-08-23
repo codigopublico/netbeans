@@ -41,13 +41,13 @@ public:
     void estados(){
         std::cout << "Tiene " << prot << " proteinas \n";
         ii = 0;
-        for(int i = 0; i < 6; i++){
+        for(int i = 0; i < 5; i++){
             if(aux[i] == 1){
                 impestados(i);
             }else{
                 ii++;
             }
-            if(ii == 5){
+            if(ii == 4){
                 impestados(ii);
                 
             }
