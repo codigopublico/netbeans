@@ -60,20 +60,22 @@ class Gisantes : public alimentos{
 };
 class carnes : public alimentos{
 public:
-    prot = 0;
-    gras = 0;
-    hidra = 0;
-    cali = 0;
+    int prot = 0;
+    int gras = 0;
+    int hidra = 0;
+    int cali = 0;
 };
 class buey : public carnes{
     
 };
 class pescados : public alimentos{
 public:
-    int prot = 0;
-    int gras = 0;
-    int hidra = 0;
-    int cali = 0;
+    void iniciar(){
+    prot = 0;
+    gras = 0;
+    hidra = 0;
+    cali = 0;
+   }
 };
 class merluza : public pescados{
     
@@ -86,10 +88,12 @@ class atun : public pescados{
 };
 class verduras : public alimentos{
 public:
-    int prot = 0;
-    int gras = 0;
-    int hidra = 0;
-    int cali = 0;
+    void iniciar(){
+    prot = 0;
+    gras = 0;
+    hidra = 0;
+    cali = 0;
+    }
 };
 class judias : public verduras{
     
@@ -102,6 +106,7 @@ class ternera : public carnes{
 };
 int main(int argc, char** argv) {
     verduras prueva;
+    prueva.iniciar();
     prueva.estados();
 }
 
