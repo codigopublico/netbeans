@@ -27,10 +27,10 @@ public:
             cal = cal /aux;
             for(int i = 0; i < aux; i++){
                 while(aux2[i] > cal){
-                    aux[i] = aux[i] * 2;
+                    aux2[i] = aux2[i] * 2;
                     aux3++;
             }
-                aux[i] = aux3;
+                aux2[i] = aux3;
                 aux3 = 0;
             }
             for(int i = 0; i < aux; i++){
