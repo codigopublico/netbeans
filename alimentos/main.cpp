@@ -16,7 +16,7 @@ using namespace std;
  */
 class alimentos{
 public:
-    char alimentos[][] = ("hola", "adios" ); 
+    char alimentos[][] = ["hola", "adios" ]; 
     //propiedades del alimento
     int prot;
     int gras;
