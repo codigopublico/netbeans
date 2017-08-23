@@ -14,28 +14,29 @@ using namespace std;
  */
 class alimentos{
 public:
-    string estado;
-    estado = "Crudo";
+    char *estado[5] = [ "firto", "asado", "comido", "pelado", "crudo"];
+    char **p;
+    *p = &estado[5];
     //propiedades del alimento
     int prot = 0;
     int gras = 0;
     int hidra = 0;
     int cali = 0;
     void frie(){
-        estado = "frito";
+        
     }
     void asa(){
-        estado = "asado";
+        
     }
     void come(){
-        estado = "comido";
+        
     }
     void pela(){
-        estado = "pelado";
+       
     }
     void estado(){
         std::cout << "Tiene " << prot << " proteinas \n";
-        std::cout << "La patata esta " << *estado << "\n";
+        std::cout << "La patata esta " << *p << "\n";
     }
 };
 class Gisantes : public alimentos{
