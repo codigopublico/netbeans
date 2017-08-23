@@ -15,7 +15,6 @@ using namespace std;
  */
 class recetas : public alimentos{
 public:
-    int c;
     void ingredientes(int c){
         aux2[aux] = c;
         aux++;
@@ -36,7 +35,7 @@ int main(int argc, char** argv) {
     salmon.iniciar();
     verduras lechuga;
     lechuga.iniciar();
-    recetas gazpacho();
+    recetas gazpacho;
     gazpacho.ingredientes(5);
     gazpacho.ingredientes(10);
     return 0;
