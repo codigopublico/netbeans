@@ -34,8 +34,9 @@ public:
        
     }
     void estado(){
+        int i = 5;
         std::cout << "Tiene " << prot << " proteinas \n";
-        std::cout << "La patata esta " << estado[5] << "\n";
+        std::cout << "La patata esta " << estado[i] << "\n";
     }
 private:
     int aux;
