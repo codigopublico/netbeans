@@ -135,7 +135,7 @@ public:
     }
     
 };
-class motor{
+class motor : public revol, velocimetro{
 public:
     int arra; //Variable que indica si el motor esta arrancado
     void arrancar(){
@@ -149,12 +149,30 @@ public:
             std::cout << "\nEl coche no arranca dale de nuevo\n";
         }
     }
+        void acce(){
+            if(rev>1000){
+                rev = 0;
+            }
+            rev = rev + 30;
+            vel = vel + 30;
+        }
+        void fren(){
+            rev = rev - 30;
+            if(rev<0){
+                rev = 0;
+            }
+            vel = vel + 30;
+        }
+        void parar(){
+            rev = 0;
+            vel = 0;
+        }
 private:
     arbol Oaux;
     bujias Oaux2;
     valvulas Oaux3;
 };
-class vehiculo : public panel{
+class vehiculo : public intrumentos{
 public:
     string color;
     int pot;
@@ -165,12 +183,16 @@ public:
     }
     void arrancar(){
         aux = 1;
+        Omotor.arrancar();
     }
     void parar(){
         aux = 0;
+        Omotor.parar();
     }
     void adelatar(){
         std::cout << "El Vehiculo a adelantado";
+        Omotor.acce();
+        
     }
     void estado(){
         if (aux == 0){
