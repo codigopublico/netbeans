@@ -21,11 +21,12 @@ public:
         aux++;
     }
     void personas(int a){
-            aux = aux + 1;
+            aux = aux - 1;
             int cal = 20;
             int aux3 = 0;
             cal = cal * a;
             cal = cal /aux;
+            std::cout << cal << "\n";
             for(int i = 0; i < aux; i++){
                 while(aux2[i] > cal){
                     aux2[i] = aux2[i] * 2;
