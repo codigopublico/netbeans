@@ -220,6 +220,9 @@ int main(int argc, char** argv) {
     ferri.crea("Rojo", 200);
     ferri.arrancar();
     ferri.estado();
+    ferri.botones(1, 1);
+    ferri.adelatar();
+    ferri.panel();
     return 0;
 }
 
