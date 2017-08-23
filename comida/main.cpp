@@ -78,13 +78,37 @@ public:
    }
 };
 class merluza : public pescados{
-    
+     void iniciar(){
+    prot = 0;
+    gras = 0;
+    hidra = 0;
+    cali = 0;
+    for(int i = 0; i < 5; i++) {
+        aux[i] = 0;
+    }
+    }
 };
 class salmon : public pescados{
-    
+     void iniciar(){
+    prot = 0;
+    gras = 0;
+    hidra = 0;
+    cali = 0;
+    for(int i = 0; i < 5; i++) {
+        aux[i] = 0;
+    }
+    }
 };
 class atun : public pescados{
-    
+     void iniciar(){
+    prot = 0;
+    gras = 0;
+    hidra = 0;
+    cali = 0;
+    for(int i = 0; i < 5; i++) {
+        aux[i] = 0;
+    }
+    }
 };
 class verduras : public alimentos{
 public:
@@ -99,13 +123,37 @@ public:
     }
 };
 class judias : public verduras{
-    
+     void iniciar(){
+    prot = 0;
+    gras = 0;
+    hidra = 0;
+    cali = 0;
+    for(int i = 0; i < 5; i++) {
+        aux[i] = 0;
+    }
+    }
 };
 class espinacas : public verduras{
-    
+     void iniciar(){
+    prot = 0;
+    gras = 0;
+    hidra = 0;
+    cali = 0;
+    for(int i = 0; i < 5; i++) {
+        aux[i] = 0;
+    }
+    }
 };
 class ternera : public carnes{
-    
+     void iniciar(){
+    prot = 0;
+    gras = 0;
+    hidra = 0;
+    cali = 0;
+    for(int i = 0; i < 5; i++) {
+        aux[i] = 0;
+    }
+    }
 };
 int main(int argc, char** argv) {
     verduras prueva;
