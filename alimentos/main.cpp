@@ -16,6 +16,8 @@ using namespace std;
 class alimentos{
 public:
     string estado[5] = ["frie", "asa", "come", "pela", "crudo" ];
+    string dia[] = { "Domingo", "Lunes", "Martes", "Miercoles", "Jueves", "Viernes", "Sabado" };
+     
     //propiedades del alimento
     int prot;
     int gras;
@@ -43,7 +45,6 @@ private:
 };
 class Gisantes : public alimentos{
 
-    
 };
 class carnes : public alimentos{
 public:
