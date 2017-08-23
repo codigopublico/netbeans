@@ -15,12 +15,12 @@ using namespace std;
  */
 class alimentos{
 public:
-    string estado[] = [ "firto", "asado", "comido", "pelado", "crudo"];
+    string estado[] = { "firto", "asado", "comido", "pelado", "crudo"};
     //propiedades del alimento
-    int prot = 0;
-    int gras = 0;
-    int hidra = 0;
-    int cali = 0;
+    int prot;
+    int gras;
+    int hidra;
+    int cali;
     void frie(){
         
     }
