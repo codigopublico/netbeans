@@ -19,7 +19,7 @@ void impestados(int a){
 }
 class alimentos{
 public:
-    int aux[5];
+    int aux[4];
     //propiedades del alimento
     int prot;
     int gras;
