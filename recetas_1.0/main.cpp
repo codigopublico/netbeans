@@ -15,10 +15,11 @@ using namespace std;
  */
 class recetas : public alimentos{
 public:
+    int c;
     void ingredientes(int c){
         aux2[aux] = c;
         aux++;
-        std::cout << "  " << aux << "  " << cali;
+        std::cout << "  " << aux << "  " << aux2[aux];
     }
     void personas(int a){
        
@@ -36,8 +37,8 @@ int main(int argc, char** argv) {
     verduras lechuga;
     lechuga.iniciar();
     recetas gazpacho();
-    gazpacho.ingredientes(salmon.cal());
-    gazpacho.ingredientes(lechuga.cal());
+    gazpacho.ingredientes(5);
+    gazpacho.ingredientes(10);
     return 0;
 }
 
