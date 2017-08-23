@@ -125,9 +125,9 @@ private:
 class intrumentos : public leds, revol, velocimetro{
 public:
     void panel(){
-        std::cout << "El led delatera esta " << del << "El led trasero esta " << tra;
-        std::cout << "El panel de revoluciones mustra " <<  rev;
-        std::cout << "El panel de velocidad muestra  " << vel;
+        std::cout << "\nEl led delatera esta " << del << "El led trasero esta " << tra;
+        std::cout << "\nEl panel de revoluciones mustra " <<  rev;
+        std::cout << "\nEl panel de velocidad muestra\n  " << vel;
     }
     void botones(int d, int t){
         del = d;
@@ -181,11 +181,9 @@ public:
         p = pot;
     }
     void arrancar(){
-        aux = 1;
         Omotor.arrancar();
     }
     void parar(){
-        aux = 0;
         Omotor.parar();
     }
     void adelatar(){
