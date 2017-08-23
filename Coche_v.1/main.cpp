@@ -220,11 +220,6 @@ int main(int argc, char** argv) {
     ferri.crea("Rojo", 200);
     ferri.arrancar();
     ferri.estado();
-    motor prueva;
-    prueva.arrancar();
-    intrumentos prueva2;
-    prueva2.botones(1, 2);
-    prueva2.panel();
     return 0;
 }
 
