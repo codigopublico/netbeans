@@ -18,7 +18,7 @@ public:
     void ingredientes(int c){
         aux2[aux] = c;
         std::cout << "  " << aux << "  " << aux2[aux] << "\n";
-                aux++;
+        aux++;
     }
     void personas(int a){
        
