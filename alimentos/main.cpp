@@ -16,7 +16,7 @@ using namespace std;
  */
 class alimentos{
 public:
-    int alimentos[][] = (1, 2); 
+    int estado[0][] = [1, 2]; 
     //propiedades del alimento
     int prot;
     int gras;
@@ -37,7 +37,7 @@ public:
     void estado(){
         int i = 1;
         std::cout << "Tiene " << prot << " proteinas \n";
-        std::cout << "La patata esta " << alimentos[0][1] << "\n";
+        std::cout << "La patata esta " << estado[0][1] << "\n";
     }
 private:
     int aux;
