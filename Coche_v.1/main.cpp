@@ -185,17 +185,6 @@ public:
         color = c;
         p = pot;
     }
-    void arrancar(){
-        Omotor.arrancar();
-    }
-    void parar(){
-        Omotor.parar();
-    }
-    void adelatar(){
-        std::cout << "El Vehiculo a adelantado";
-        Omotor.acce();
-        
-    }
     void estado(){
         if (arra == 0){
         std::cout << "El vehiculo esta parado";
@@ -205,7 +194,6 @@ public:
         
     }
 private:
-    motor Omotor;
     int aux;
 };
 class coche : public vehiculo{
@@ -222,10 +210,9 @@ public:
 int main(int argc, char** argv) {
     vehiculo ferri;
     ferri.crea("Rojo", 200);
-    ferri.arrancar();
     ferri.estado();
     ferri.botones(1, 1);
-    ferri.adelatar();
+    ferri.acce();
     ferri.adelatar();
     ferri.panel();
     return 0;
