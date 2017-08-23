@@ -144,10 +144,14 @@ public:
         Oaux2.pren();
         if(Oaux2.get() == 1 && Oaux.get() == 1 && Oaux3.get() == 1){
             arra = 1;
+            vel = 0;
+            rev = 0;
             std::cout << "\nEl choche a arrancado\n";
         }else{
             std::cout << "\nEl coche no arranca dale de nuevo\n";
             arra = 0;
+            rev = 0;
+            vel = 0;
         }
     }
         void acce(){
