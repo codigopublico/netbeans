@@ -8,6 +8,7 @@
 #include <iostream>
 #include <string>
 #include <string.h>
+#include <cstdlib>
 using namespace std;
 
 /*
@@ -15,9 +16,7 @@ using namespace std;
  */
 class alimentos{
 public:
-    string estado[5] = ["frie", "asa", "come", "pela", "crudo" ];
-    string dia[] = { "Domingo", "Lunes", "Martes", "Miercoles", "Jueves", "Viernes", "Sabado" };
-     
+    string *estado[5] = ["frie", "asa", "come", "pela", "crudo" ];
     //propiedades del alimento
     int prot;
     int gras;
@@ -38,7 +37,7 @@ public:
     void estado(){
         int i = 1;
         std::cout << "Tiene " << prot << " proteinas \n";
-        std::cout << "La patata esta " << estado[i] << "\n";
+        std::cout << "La patata esta " << *estado[i] << "\n";
     }
 private:
     int aux;
