@@ -176,7 +176,6 @@ class vehiculo : public intrumentos{
 public:
     string color;
     int pot;
-    int aux = 0;
     void crea(string c, int p){
         color = c;
         p = pot;
@@ -204,6 +203,7 @@ public:
     }
 private:
     motor Omotor;
+    int aux;
 };
 class coche : public vehiculo{
 public:
