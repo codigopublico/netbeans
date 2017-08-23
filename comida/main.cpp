@@ -53,6 +53,15 @@ public:
             }
         }
     }
+     void iniciar(){
+    prot = 0;
+    gras = 0;
+    hidra = 0;
+    cali = 0;
+    for(int i = 0; i < 5; i++) {
+        aux[i] = 0;
+    }
+    }
 
 };
 class Gisantes : public alimentos{
@@ -155,11 +164,29 @@ class ternera : public carnes{
     }
     }
 };
+class cerdo : public carnes{
+    
+};
+class sardina : public pescados{
+    
+};
+class frutas : public alimentos{
+    
+};
+class Kiwi : public frutas{
+    
+};
 int main(int argc, char** argv) {
     verduras prueva;
     prueva.iniciar();
     prueva.estados();
     prueva.frie();
     prueva.estados();
+    buey cabeza;
+    cabeza.asa();
+    cabeza.frie();
+    cabeza.iniciar();
+    Kiwi kiwi1;
+    kiwi1.estados();
 }
 
