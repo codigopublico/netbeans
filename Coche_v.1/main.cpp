@@ -206,6 +206,7 @@ private:
     motor Omotor;
 };
 class coche : public vehiculo{
+public:
     int aux2;
     void adelatar(){
         aux2++;
