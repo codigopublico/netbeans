@@ -34,10 +34,6 @@ public:
     void pela(){
         pelar = 1;
     }
-    void prop(int pro, int gra, int hid, int cal){
-        prot = pro; gras = gra; hidra = hid; cali = cal;
-        
-    }
     void estado(){
         std::cout << "Tiene " << prot << " proteinas \n";
         std::cout << "La patata esta " << fri << "\n";
