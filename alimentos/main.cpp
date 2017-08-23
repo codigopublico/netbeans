@@ -6,7 +6,8 @@
  */
 #include <cstdlib>
 #include <iostream>
-
+#include <string>
+#include <string.h>
 using namespace std;
 
 /*
@@ -14,9 +15,7 @@ using namespace std;
  */
 class alimentos{
 public:
-    char *estado[5] = [ "firto", "asado", "comido", "pelado", "crudo"];
-    char **p;
-    *p = &estado[5];
+    string estado[5] = [ "firto", "asado", "comido", "pelado", "crudo"];
     //propiedades del alimento
     int prot = 0;
     int gras = 0;
@@ -36,8 +35,10 @@ public:
     }
     void estado(){
         std::cout << "Tiene " << prot << " proteinas \n";
-        std::cout << "La patata esta " << *p << "\n";
+        std::cout << "La patata esta " << estado[5] << "\n";
     }
+private:
+    int aux;
 };
 class Gisantes : public alimentos{
 
