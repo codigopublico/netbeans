@@ -65,7 +65,9 @@ public:
         int r[2];
         r[0] = cali;
         r[1] = id;
-        return r[];
+        int *p;
+        *p = &r;
+        return *p;
     }
      void iniciar(){
     prot = 0;

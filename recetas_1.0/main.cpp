@@ -15,11 +15,11 @@ using namespace std;
  */
 class recetas : public alimentos{
 public:
-    void ingredientes(int c[]){
-        aux2[aux] = c[0];
+    void ingredientes(int *p){
+        aux2[aux] = *p[0];
         std::cout << "  " << aux << "  " << aux2[aux] << "\n";
         aux++;
-        int id2 = c[1];
+        int id2 = *p[1];
     }
     void personas(int a){
             int cal = 20;
@@ -52,7 +52,7 @@ int main(int argc, char** argv) {
     verduras lechuga;
     lechuga.iniciar();
     recetas gazpacho;
-    gazpacho.ingredientes(lechuga.cal());//aqui tiene que retornar un array
+    gazpacho.ingredientes(lechuga.cal());//aqui tiene que retornar un puntero a un array
     gazpacho.ingredientes(salmon.cal());
     gazpacho.personas(20);
     return 0;
