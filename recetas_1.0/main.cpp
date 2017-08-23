@@ -16,7 +16,7 @@ using namespace std;
 class recetas : public alimentos{
 public:
     void ingredientes(int c){
-        aux[aux] = c;
+        aux2[aux] = c;
         aux++;
         std::cout << "  " << aux << "  " << cali;
     }

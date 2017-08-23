@@ -59,8 +59,8 @@ public:
             }
         }
     }
-    void cal(){
-        return cal;
+    int cal(){
+        return cali;
     }
      void iniciar(){
     prot = 0;
