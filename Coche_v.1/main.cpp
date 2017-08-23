@@ -154,7 +154,7 @@ private:
     bujias Oaux2;
     valvulas Oaux3;
 };
-class vehiculo{
+class vehiculo : public panel{
 public:
     string color;
     int pot;
@@ -180,6 +180,8 @@ public:
         }
         
     }
+private:
+    motor Omotor;
 };
 class coche : public vehiculo{
     int aux2;
