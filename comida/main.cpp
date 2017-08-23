@@ -183,10 +183,12 @@ int main(int argc, char** argv) {
     prueva.frie();
     prueva.estados();
     buey cabeza;
+    cabeza.iniciar();
     cabeza.asa();
     cabeza.frie();
-    cabeza.iniciar();
+    cabeza.estados();
     Kiwi kiwi1;
+    kiwi1.iniciar();
     kiwi1.estados();
 }
 
