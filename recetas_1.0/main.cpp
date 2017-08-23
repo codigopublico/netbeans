@@ -32,7 +32,7 @@ public:
                     aux2[i] = aux2[i] * 2;
             }
                 aux2[i] = aux3;
-                aux3 = 0;
+                
             }
             for(int i = 0; i < aux; i++){
                 std::cout << "aux3: " << aux2[i] << "\n";
