@@ -94,7 +94,7 @@ int main(int argc, char** argv) {
     nada.estado();
     return 0;
 }
-int main(int argc, char** argv) {
+int main() {
     alimentos prueva;
     prueva.estados();
 }
