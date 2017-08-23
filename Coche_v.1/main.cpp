@@ -177,7 +177,7 @@ private:
     bujias Oaux2;
     valvulas Oaux3;
 };
-class vehiculo : public intrumentos{
+class vehiculo : public intrumentos, motor{
 public:
     string color;
     int pot;
@@ -197,7 +197,7 @@ public:
         
     }
     void estado(){
-        if (aux == 0){
+        if (arra == 0){
         std::cout << "El vehiculo esta parado";
         }else{
             std::cout << "El vehiculo esta arrancado";
