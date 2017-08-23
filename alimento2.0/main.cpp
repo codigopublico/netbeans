@@ -7,6 +7,7 @@
 
 #include <cstdlib>
 #include <iostream>
+#include <stdlib.h>
 
 using namespace std;
 
@@ -16,7 +17,7 @@ using namespace std;
 class alimentos{
 public:
     int estad[0];
-    estad[0] = 0;
+    estad[0];
     //propiedades del alimento
     int prot;
     int gras;
