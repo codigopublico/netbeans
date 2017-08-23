@@ -217,7 +217,7 @@ public:
     
 };
 int main(int argc, char** argv) {
-    coche ferri;
+    vehiculo ferri;
     ferri.crea("Rojo", 200);
     ferri.arrancar();
     ferri.estado();
