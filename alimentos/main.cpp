@@ -16,7 +16,7 @@ using namespace std;
  */
 class alimentos{
 public:
-    string *estado[5] = ["frie", "asa", "come", "pela", "crudo" ];
+    char alimentos[][] = ("hola", "adios" ); 
     //propiedades del alimento
     int prot;
     int gras;
@@ -37,7 +37,7 @@ public:
     void estado(){
         int i = 1;
         std::cout << "Tiene " << prot << " proteinas \n";
-        std::cout << "La patata esta " << *estado[i] << "\n";
+        std::cout << "La patata esta " << alimentos[1][1] << "\n";
     }
 private:
     int aux;
