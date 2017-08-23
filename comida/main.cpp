@@ -19,12 +19,12 @@ void impestados(int a){
 }
 class alimentos{
 public:
-    int estado = 4;
+    int aux[6] = 1;
     //propiedades del alimento
-    int prot;
-    int gras;
-    int hidra;
-    int cali;
+    int prot = 0;
+    int gras = 0;
+    int hidra = 0;
+    int cali = 0;
     void frie(){
         estado = 0;
         aux[0] = 1;
@@ -43,13 +43,13 @@ public:
     }
     void estados(){
         std::cout << "Tiene " << prot << " proteinas \n";
-        for(int i = 0; i < 5; i++){
+        for(int i = 0; i < 6; i++){
             if(aux[i] == 1){
                 impestados(i);
             }}
     }
 private:
-    int aux[4];
+    int aux[5];
 };
 class Gisantes : public alimentos{
 
