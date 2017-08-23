@@ -26,23 +26,30 @@ public:
     int hidra;
     int cali;
     void frie(){
-        
+        estado = 0;
+        aux[0] = 1;
     }
     void asa(){
-        
+        estado = 1;
+        aux[1] = 1;
     }
     void come(){
-        
+        estado = 2;
+        aux[2] = 1;
     }
     void pela(){
-       
+        estado = 3;
+        aux[3] = 1;
     }
     void estados(){
         std::cout << "Tiene " << prot << " proteinas \n";
-        impestados(estado);
+        for(int i = 0; i < 5; i++){
+            if(aux[i] == 1){
+                impestados(i);
+            }}
     }
 private:
-    int aux;
+    int aux[4];
 };
 class Gisantes : public alimentos{
 
