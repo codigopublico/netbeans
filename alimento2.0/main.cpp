@@ -16,7 +16,6 @@ using namespace std;
 class alimentos{
 public:
     int estad[0][2];
-    int estad[0][1] = 1;
     //propiedades del alimento
     int prot;
     int gras;
