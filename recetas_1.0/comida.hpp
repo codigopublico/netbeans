@@ -62,7 +62,10 @@ public:
         }
     }
     int cal(){
-        return cali;
+        int r[2];
+        r[0] = cali;
+        r[1] = id;
+        return r[];
     }
      void iniciar(){
     prot = 0;
