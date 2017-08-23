@@ -27,7 +27,7 @@ public:
             cal = cal /aux;
             for(int i = 0; i < aux; i++){
                 while(aux2[i] > cal){
-                    aux[i] = aux[i];
+                    aux[i] = aux[i] * 2;
                     aux3++;
             }
                 aux[i] = aux3;
