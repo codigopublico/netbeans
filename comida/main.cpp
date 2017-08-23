@@ -93,7 +93,7 @@ public:
     gras = 0;
     hidra = 0;
     cali = 0;
-    for(int i = 0, i < 5, i++) {
+    for(int i = 0; i < 5; i++) {
         aux[i] = 0;
     }
     }
