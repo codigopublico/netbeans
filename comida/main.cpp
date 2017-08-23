@@ -20,6 +20,7 @@ void impestados(int a){
 class alimentos{
 public:
     int aux[4];
+    int ii;
     //propiedades del alimento
     int prot;
     int gras;
@@ -39,10 +40,18 @@ public:
     }
     void estados(){
         std::cout << "Tiene " << prot << " proteinas \n";
+        ii = 0;
         for(int i = 0; i < 6; i++){
             if(aux[i] == 1){
                 impestados(i);
-            }}
+            }else{
+                ii++;
+            }
+            if(ii == 5){
+                impestados(ii);
+                
+            }
+        }
     }
 
 };
@@ -92,7 +101,7 @@ class ternera : public carnes{
     
 };
 int main(int argc, char** argv) {
-    alimentos prueva;
+    verduras prueva;
     prueva.estados();
 }
 
