@@ -27,12 +27,12 @@ public:
             cal = cal /aux;
             std::cout << cal << " " << aux2[0] << "\n";
             for(int i = 0; i < aux; i++){
-                while(aux2[i] > cal){
+                while(aux2[i] < cal){
                     aux3++;
                     aux2[i] = aux2[i] * 2;
             }
                 aux2[i] = aux3;
-                
+                aux3 = 0;
             }
             for(int i = 0; i < aux; i++){
                 std::cout << "aux3: " << aux2[i] << "\n";
