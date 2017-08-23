@@ -25,11 +25,11 @@ public:
             int aux3 = 0;
             cal = cal * a;
             cal = cal /aux;
-            std::cout << cal << "\n";
+            std::cout << cal << " " << aux2[0] << "\n";
             for(int i = 0; i < aux; i++){
                 while(aux2[i] > cal){
-                    aux2[i] = aux2[i] * 2;
                     aux3++;
+                    aux2[i] = aux2[i] * 2;
             }
                 aux2[i] = aux3;
                 aux3 = 0;
