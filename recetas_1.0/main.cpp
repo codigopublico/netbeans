@@ -36,8 +36,8 @@ int main(int argc, char** argv) {
     verduras lechuga;
     lechuga.iniciar();
     recetas gazpacho;
-    gazpacho.ingredientes(5);
-    gazpacho.ingredientes(10);
+    gazpacho.ingredientes(lechuga.cal());
+    gazpacho.ingredientes(salmon.cal());
     return 0;
 }
 
