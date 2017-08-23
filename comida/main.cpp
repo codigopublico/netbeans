@@ -93,7 +93,9 @@ public:
     gras = 0;
     hidra = 0;
     cali = 0;
-    aux[] = [0, 0, 0, 0];
+    for(int i = 0, i < 5, i++) {
+        aux[i] = 0;
+    }
     }
 };
 class judias : public verduras{
