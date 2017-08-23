@@ -21,7 +21,6 @@ public:
         aux++;
     }
     void personas(int a){
-            aux = aux - 1;
             int cal = 20;
             int aux3 = 0;
             cal = cal * a;
