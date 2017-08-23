@@ -12,7 +12,15 @@ using namespace std;
 /*
  * 
  */
+class alimento{
+public:
+    int pro;
+    int gra;
+    int Hidra;
+    int calor;
+};
 int main(int argc, char** argv) {
+    
 
     return 0;
 }
