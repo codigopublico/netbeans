@@ -23,7 +23,7 @@ void impestados(int a){
     string estado[] ={"frito", "asado", "pelado", "comido", "crudo" };
     std::cout << "El alimento esta " << estado[a] << "\n";
 }
-string alimento[] ={"carnes", "pescados", "merluza", "salmon", };
+string alimento[] ={"carnes", "pescados", "merluza", "salmon", "atun", "buey", "verduras"};
 class alimentos{
 public:
     int aux[4];
@@ -33,6 +33,7 @@ public:
     int gras;
     int hidra;
     int cali;
+    int id;
     void frie(){
         aux[0] = 1;
     }
@@ -138,6 +139,7 @@ public:
     gras = 0;
     hidra = 0;
     cali = 5;
+    id = 2;
     for(int i = 0; i < 5; i++) {
         aux[i] = 0;
     }
