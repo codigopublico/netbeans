@@ -51,7 +51,7 @@ public:
 };
 class velocimetro{
 public:
-    int vel;
+    int vel = 0;
     void setvel(int v){
         vel = v;
     }
