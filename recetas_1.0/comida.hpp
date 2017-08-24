@@ -97,6 +97,7 @@ public:
     int gras = 0;
     int hidra = 0;
     int cali = 0;
+    int idi = 1;
     }
 };
 class buey : public carnes{
@@ -110,6 +111,9 @@ public:
     hidra = 0;
     cali = 10;
     idi = 2;
+    for(int i = 0; i < 5; i++) {
+        aux[i] = 0;
+    }
    }
 };
 class merluza : public pescados{
@@ -118,6 +122,7 @@ class merluza : public pescados{
     gras = 0;
     hidra = 0;
     cali = 0;
+    idi = 3;
     for(int i = 0; i < 5; i++) {
         aux[i] = 0;
     }
