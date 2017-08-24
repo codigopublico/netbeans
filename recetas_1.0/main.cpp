@@ -120,11 +120,11 @@ void p2(){
             gazpacho.ingredientes(p7.cal());
         }
     }
-            gazpacho.personas(20);
+            //gazpacho.personas(20);
     
 }
 int main(int argc, char** argv) {
-    //p1();
+    p1();
     p2();
     return 0;
 }
