@@ -66,6 +66,7 @@ public:
     void cal(){
         r[0] = cali;
         r[1] = id;
+        return *p;
     }
      void iniciar(){
     prot = 0;
