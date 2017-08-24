@@ -63,10 +63,14 @@ public:
         }
     }
     int* cal(){
-        //int* p = new int[2];
-        /*p[0] = cali;
-        p[1] = idi;*/
-        return NULL;//miarar de retornar un array para retornar todo.
+        cout << "111111111" << endl;
+        int* p = new int[2];
+        cout << "2222222222" << endl;
+        p[0] = cali;
+        cout << "33333333" << endl;
+        p[1] = idi;
+        cout << "4444444" << endl;
+        return p;//miarar de retornar un array para retornar todo.
     }
     int id(){
         return idi;
