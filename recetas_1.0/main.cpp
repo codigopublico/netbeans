@@ -64,7 +64,7 @@ void p1(){
 }
 void p2(){
     int a[20];
-    std::cout << "Dime que el numero de  aliemento que  quieres tienes estos para escojer(para salir -1): ";
+    std::cout << "Dime que el numero de  aliemento que  quieres tienes estos para escojer(para salir 50): ";
     for(int i = 0; i < 7; i++){
         std::cout << alimento[i] << "  " << i;
     }
@@ -73,7 +73,7 @@ void p2(){
     do{
         std::cin >> a[i];
         i++;
-        if(i == -1){
+        if(a[i] == 50){
             break;
         }
     }while(true);
