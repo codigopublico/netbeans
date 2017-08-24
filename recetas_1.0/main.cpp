@@ -19,7 +19,9 @@ public:
         aux2[aux] = p2;
         al = p;
         std::cout << "  " << aux << "  " << aux2[aux] << "\n";
+        al[aux] = p;
         aux++;
+        
     }
     void personas(int a){
             int cal = 20;
@@ -36,14 +38,14 @@ public:
                 aux3 = 0;
             }
             for(int i = 0; i < aux; i++){
-                std::cout << "ingredientes " <<alimento[2] << i << "cantidad " << aux2[i] << "\n";
+                std::cout << "ingredientes " <<alimento[al[i]] << i << "cantidad " << aux2[i] << "\n";
             }
     }
     void Tiempo(){
         
     }   
 private:
-    int al;
+    int al[9];
     int aux = 0;
     int aux2[9];
     int id2[9];
