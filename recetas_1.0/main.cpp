@@ -50,7 +50,7 @@ private:
     int aux2[9];
     int id2[9];
 };
-int main(int argc, char** argv) {
+void p1(){
     pescados salmon;
     salmon.iniciar();
     verduras lechuga;
@@ -61,6 +61,18 @@ int main(int argc, char** argv) {
     gazpacho.ingredientes(lechuga.cal());//aqui tiene que retornar un puntero a un array
     gazpacho.ingredientes(salmon.cal());
     gazpacho.personas(20);
+}
+void p2(){
+    int a;
+    std::cout << "Dime que aliemento quieres tienes estos para escojer: ";
+    for(int i; i < 7; i++){
+        std::cout << alimentos[i] << "  ";
+    }
+    std::cout << "\n";
+}
+int main(int argc, char** argv) {
+    //p1();
+    p2();
     return 0;
 }
 
