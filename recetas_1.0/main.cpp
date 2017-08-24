@@ -71,8 +71,8 @@ void p2(){
     std::cout << "\n";
     int i = 0;
     while(a[i] != 0){
+         i++;
         std::cin >> a[i];
-        i++;
     }
     
 }
