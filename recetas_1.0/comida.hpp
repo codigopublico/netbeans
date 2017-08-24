@@ -63,10 +63,10 @@ public:
         }
     }
     int* cal(){
-        int* p = new int[2];
+        //int* p = new int[2];
         /*p[0] = cali;
         p[1] = idi;*/
-        return p;//miarar de retornar un array para retornar todo.
+        return NULL;//miarar de retornar un array para retornar todo.
     }
     int id(){
         return idi;
