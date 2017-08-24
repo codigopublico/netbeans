@@ -45,7 +45,7 @@ public:
                 aux3 = 0;
             }
             for(int i = 0; i < au; i++){
-                std::cout << "ingredientes " << alimento[al[i]]  << "cantidad " << aux2[i] << " "  << "\n";//ponerle el nombre de los igredientes
+                std::cout << "ingredientes " << alimento[al[i]]  << " cantidad " << aux2[i] << " "  << "\n";//ponerle el nombre de los igredientes
                 
             }
     }
