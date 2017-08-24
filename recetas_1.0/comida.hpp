@@ -66,7 +66,7 @@ public:
     void cal(){
         r[0] = cali;
         r[1] = id;
-        return *p;
+        return *p;//miarar de retornar un array para retornar todo.
     }
      void iniciar(){
     prot = 0;
