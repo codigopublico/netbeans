@@ -17,26 +17,26 @@ class recetas : public alimentos{
 public:
     void ingredientes(int *p){
         std::cout << "00000" << "\n";
-        aux2[aux] = *p;
+        aux2[au] = *p;
          std::cout << "00000" << "\n";
-        std::cout << "  " << aux << "  " << aux2[aux] << "\n";
+        std::cout << "  " << au << "  " << aux2[au] << "\n";
          std::cout << "00000" << "\n";
         p++;
          std::cout << "00000" << "\n";
-        al[aux] = *p;
+        al[au] = *p;
          std::cout << "00000" << "\n";
         //std::cout << "al[aux]  "  << al[aux] << " aux2[aux] " << aux2[aux] << "\n";
          std::cout << "00000" << "\n";
-        aux++;
+        au++;
         
     }
     void personas(int a){
             int cal = 20;
             int aux3 = 0;
             cal = cal * a;
-            cal = cal /aux;
+            cal = cal /au;
             std::cout << cal << " " << aux2[0] << "\n";
-            for(int i = 0; i < aux; i++){
+            for(int i = 0; i < au; i++){
                 while(aux2[i] < cal){
                     aux3++;
                     aux2[i] = aux2[i] * 2;
@@ -44,7 +44,7 @@ public:
                 aux2[i] = aux3;
                 aux3 = 0;
             }
-            for(int i = 0; i < aux; i++){
+            for(int i = 0; i < au; i++){
                 std::cout << "ingredientes "   << "cantidad " << aux2[i] << " " << al[i] << "\n";
             }
     }
@@ -53,7 +53,7 @@ public:
     }   
 private:
     int al[9];
-    int aux;
+    int au;
     int aux2[9];
     int id2[9];
 };
