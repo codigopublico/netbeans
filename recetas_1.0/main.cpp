@@ -72,11 +72,11 @@ void p2(){
     std::cout << "\n";
     int i = 1;
     while(a[i - 1] != 0){
-        std::cin >> a[i - 1];
         i++;
+        std::cin >> a[i - 1];
     }
     for(int ii = 0; ii < i; ii++){
-        std::cout << ii << "  ";
+        std::cout << a[ii] << "  ";
     }
     
     
