@@ -19,7 +19,7 @@ public:
         aux2[au] = *p;
         p++;
         al[au] = *p;
-        std::cout << "El igrediente que pusiste es :  " << al[au] << "\n";
+        std::cout << "El igrediente que pusiste es :  " << alimento[*p] << "\n";
         au++;
         
     }
