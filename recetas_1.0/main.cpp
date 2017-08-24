@@ -56,11 +56,11 @@ void p1(){
     verduras lechuga;
     lechuga.iniciar();
     //inicializado los alimentos.
-    recetas gazpacho;
-    gazpacho.iniciar();
-    gazpacho.ingredientes(lechuga.cal());//aqui tiene que retornar un puntero a un array
-    gazpacho.ingredientes(salmon.cal());
-    gazpacho.personas(20);
+    recetas gazpach;
+    gazpach.iniciar();
+    gazpach.ingredientes(lechuga.cal());//aqui tiene que retornar un puntero a un array
+    gazpach.ingredientes(salmon.cal());
+    gazpach.personas(20);
 }
 void p2(){
     int a[20];
@@ -120,7 +120,7 @@ void p2(){
             gazpacho.ingredientes(p7.cal());
         }
     }
-            //gazpacho.personas(20);
+            gazpacho.personas(20);
     
 }
 int main(int argc, char** argv) {
