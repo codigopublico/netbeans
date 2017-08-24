@@ -45,7 +45,7 @@ public:
                 aux3 = 0;
             }
             for(int i = 0; i < au; i++){
-                std::cout << "ingredientes "   << "cantidad " << aux2[i] << " " << al[i] << "\n";
+                //std::cout << "ingredientes "   << "cantidad " << aux2[i] << " " << al[i] << "\n";
             }
     }
     void Tiempo(){
@@ -75,7 +75,7 @@ int main(int argc, char** argv) {
     gazpacho.ingredientes(lechuga.cal());//aqui tiene que retornar un puntero a un array
     //gazpacho.ingredientes(salmon.cal());
     gazpacho.personas(20);
-    std::cout << "hola mundo\n";
+    std::cout << "funciona\n";
     return 0;
 }
 
