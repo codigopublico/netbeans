@@ -25,7 +25,7 @@ public:
          std::cout << "00004" << "\n";
         al[au] = *p;
          std::cout << "00005" << "\n";
-        //std::cout << "al[aux]  "  << al[aux] << " aux2[aux] " << aux2[aux] << "\n";
+        std::cout << "al[aux]  "  << al[aux] << " aux2[aux] " << aux2[aux] << "\n";
          std::cout << "00006" << "\n";
         au++;
         
