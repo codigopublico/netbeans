@@ -46,7 +46,7 @@ public:
     }   
 private:
     int al[9];
-    int aux = 0;
+    int aux;
     int aux2[9];
     int id2[9];
 };
