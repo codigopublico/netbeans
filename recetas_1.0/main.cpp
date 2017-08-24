@@ -17,7 +17,6 @@ class recetas : public alimentos{
 public:
     void ingredientes(int *p){
         aux2[au] = *p;
-        std::cout << "  " << au << "  " << aux2[au] << "\n";
         p++;
         al[au] = *p;
         std::cout << "El igrediente que pusiste es :  " << al[au] << "\n";
@@ -42,8 +41,8 @@ public:
                 
             }
     }
-    void Tiempo(){
-        
+    void Tiempo(int a){
+        std::cout << "El tiempo de preparacion es " << a;
     }   
 private:
     int al[9];
