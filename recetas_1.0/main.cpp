@@ -15,11 +15,12 @@ using namespace std;
  */
 class recetas : public alimentos{
 public:
-    void ingredientes(int *p2){
-        aux2[aux] = *p2[0];
+    void ingredientes(int **p2){
+        aux2[aux] = **p2;
         std::cout << "  " << aux << "  " << aux2[aux] << "\n";
         aux++;
-        int id2 = *p2[1];
+        **p2++;
+        int id2 = **p2;
     }
     void personas(int a){
             int cal = 20;
