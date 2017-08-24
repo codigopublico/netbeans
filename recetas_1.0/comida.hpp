@@ -97,6 +97,7 @@ public:
     }
 };
 class buey : public carnes{
+public:
     void iniciar(){
     prot = 0;
     gras = 0;
@@ -134,6 +135,7 @@ class merluza : public pescados{
     }
 };
 class salmon : public pescados{
+public:
      void iniciar(){
     prot = 0;
     gras = 0;
