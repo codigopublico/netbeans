@@ -25,18 +25,29 @@ public:
     }
     void personas(int a){
             int cal = 20;
+            std::cout << "h";
             int aux3 = 0;
+             std::cout << "h";
             cal = cal * a;
+             std::cout << "h";
             cal = cal /au;
+             std::cout << "h";
             for(int i = 0; i < au; i++){
+                 std::cout << "h";
                 while(aux2[i] < cal){
+                     std::cout << "h";
                     aux3++;
+                     std::cout << "h";
                     aux2[i] = aux2[i] * 2;
+                     std::cout << "h";
             }
                 aux2[i] = aux3;
+                 std::cout << "h";
                 aux3 = 0;
+                 std::cout << "h";
             }
             for(int i = 0; i < au; i++){
+                 std::cout << "h";
                 std::cout << "ingredientes " << alimento[al[i]]  << " cantidad " << aux2[i] << " "  << "\n";//ponerle el nombre de los igredientes
                 
             }

@@ -66,7 +66,7 @@ public:
         int* p = new int[2];
         p[0] = cali;
         p[1] = idi;
-        return p;//tomar este ejemplo para retornar arrays i cadenas de arryas.
+        return p;//tomar este ejemplo para retornar arrays i cadenas de arrys.
     }
     int id(){
         return idi;
