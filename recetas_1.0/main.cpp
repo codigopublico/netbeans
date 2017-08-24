@@ -29,7 +29,6 @@ public:
             int aux3 = 0;
             cal = cal * a;
             cal = cal /au;
-            std::cout << cal << " " << aux2[1] << "\n";
             for(int i = 0; i < au; i++){
                 while(aux2[i] < cal){
                     aux3++;
