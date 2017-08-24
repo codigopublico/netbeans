@@ -93,11 +93,11 @@ class Gisantes : public alimentos{
 class carnes : public alimentos{
 public:
     void iniciar(){
-    int prot = 0;
-    int gras = 0;
-    int hidra = 0;
-    int cali = 0;
-    int idi = 1;
+    prot = 0;
+    gras = 0;
+    hidra = 0;
+    cali = 0;
+    idi = 0;
     }
 };
 class buey : public carnes{
@@ -110,7 +110,7 @@ public:
     gras = 0;
     hidra = 0;
     cali = 10;
-    idi = 2;
+    idi = 1;
     for(int i = 0; i < 5; i++) {
         aux[i] = 0;
     }
@@ -122,7 +122,7 @@ class merluza : public pescados{
     gras = 0;
     hidra = 0;
     cali = 0;
-    idi = 3;
+    idi = 2;
     for(int i = 0; i < 5; i++) {
         aux[i] = 0;
     }
@@ -134,6 +134,7 @@ class salmon : public pescados{
     gras = 0;
     hidra = 0;
     cali = 0;
+    idi = 3;
     for(int i = 0; i < 5; i++) {
         aux[i] = 0;
     }
@@ -145,6 +146,7 @@ class atun : public pescados{
     gras = 0;
     hidra = 0;
     cali = 0;
+    idi = 4;
     for(int i = 0; i < 5; i++) {
         aux[i] = 0;
     }
