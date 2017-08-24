@@ -15,6 +15,7 @@ using namespace std;
  */
 class recetas : public alimentos{
 public:
+    int id2[];
     void ingredientes(int *p2){
         aux2[aux] = *p2;
         *p2++;
@@ -37,7 +38,7 @@ public:
                 aux3 = 0;
             }
             for(int i = 0; i < aux; i++){
-                std::cout << alimento[id2] << i << "  " << aux2[i] << "\n";
+                std::cout << alimento[id2[aux]] << i << "  " << aux2[i] << "\n";
             }
     }
     void Tiempo(){
