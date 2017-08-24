@@ -58,16 +58,24 @@ private:
     int id2[9];
 };
 int main(int argc, char** argv) {
+    std::cout << "11111\n";
     pescados salmon;
+    std::cout << "11111\n";
     salmon.iniciar();
+    std::cout << "11111\n";
     verduras lechuga;
+    std::cout << "11111\n";
     lechuga.iniciar();
+    std::cout << "11111\n";
     //inicializado los alimentos.
     recetas gazpacho;
+    std::cout << "11111\n";
     gazpacho.iniciar();
+    std::cout << "11111\n";
     //gazpacho.ingredientes(lechuga.cal());//aqui tiene que retornar un puntero a un array
     //gazpacho.ingredientes(salmon.cal());
     gazpacho.personas(20);
+    std::cout << "11111\n";
     return 0;
 }
 
