@@ -25,6 +25,7 @@ void impestados(int a){
 }
 string alimento[] ={"carnes", "pescados", "merluza", "salmon", "atun", "buey", "verduras"};
 int r[2];
+int *p = &r[0];
 class alimentos{
 public:
     int aux[4];
@@ -62,12 +63,9 @@ public:
             }
         }
     }
-    int cal(){
+    void cal(){
         r[0] = cali;
         r[1] = id;
-        int *p;
-        *p = &r[0];
-        return *p;
     }
      void iniciar(){
     prot = 0;
