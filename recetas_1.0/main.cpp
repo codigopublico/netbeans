@@ -119,9 +119,8 @@ void p2(){
             p7.iniciar();
             gazpacho.ingredientes(p7.cal());
         }
-        gazpacho.personas(20);
     }
-    
+            gazpacho.personas(20);
     
 }
 int main(int argc, char** argv) {
