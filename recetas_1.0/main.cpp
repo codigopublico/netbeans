@@ -63,12 +63,18 @@ void p1(){
     gazpacho.personas(20);
 }
 void p2(){
-    int a;
-    std::cout << "Dime que aliemento quieres tienes estos para escojer: ";
+    int a[20];
+    std::cout << "Dime que el numero de  aliemento que  quieres tienes estos para escojer(para salir 0): ";
     for(int i; i < 7; i++){
-        std::cout << alimento[i] << "  ";
+        std::cout << alimento[i] << "  " << i;
     }
     std::cout << "\n";
+    int i = 0;
+    while(a[i] != 0){
+        std::cin >> a[i];
+        i++;
+    }
+    
 }
 int main(int argc, char** argv) {
     //p1();
