@@ -78,40 +78,50 @@ void p2(){
         i++;
         
     }while(a[i - 1] != -1);
+    recetas gazpacho;
+    gazpacho.iniciar(); //receta general
     for(int ii = 0; a[ii] != -1; ii++){
         std::cout << "Poniendo alimento   "  << alimento[a[ii]] << "  \n";
         //aqui estaran los futuros problemas......
         if(a[ii] == 0){
             carnes p1;
             p1.iniciar();
+            gazpacho.ingredientes(p1.cal());
         }
         if(a[ii] == 1){
            pescados p2;
             p2.iniciar();
+            gazpacho.ingredientes(p2.cal());
         }
         if(a[ii]  == 2){
             merluza p3;
             p3.iniciar();
+            gazpacho.ingredientes(p3.cal());
         }
         if(a[ii]  == 3){
             salmon p4;
             p4.iniciar();
+            gazpacho.ingredientes(p4.cal());
         }
         if(a[ii] == 4){
             atun p5;
             atun.iniciar();
+            gazpacho.ingredientes(p5.cal());
             
         }
         if(a[ii]  == 5){
             buey p6;
             p6.iniciar();
+            gazpacho.ingredientes(p6.cal());
         }
         if(a[ii]  == 6){
             verduras p7;
             p7.iniciar();
+            gazpacho.ingredientes(p7.cal());
         }
-        
+        gazpacho.personas(20);
     }
+    
     
 }
 int main(int argc, char** argv) {
