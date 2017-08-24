@@ -62,9 +62,13 @@ public:
             }
         }
     }
-    int cal(){
-        
-        return cali;//miarar de retornar un array para retornar todo.
+    int* cal(){
+        int *p;
+        int r[2];
+        r[0] = cali;
+        r[1] = idi;
+        *p = &r[0];
+        return *p;//miarar de retornar un array para retornar todo.
     }
     int id(){
         return idi;
@@ -146,7 +150,7 @@ public:
     gras = 0;
     hidra = 0;
     cali = 5;
-    idi = 1S;
+    idi = 1;
     for(int i = 0; i < 5; i++) {
         aux[i] = 0;
     }
