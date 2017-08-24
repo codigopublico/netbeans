@@ -73,10 +73,8 @@ void p2(){
     do{
         std::cin >> a[i];
         i++;
-        if(a[i] == 50){
-            break;
-        }
-    }while(true);
+        
+    }while(a[i - 1] != -1);
     for(int ii = 0; a[ii] != 0; ii++){
         std::cout << a[ii] << "  ";
     }
