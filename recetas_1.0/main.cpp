@@ -70,10 +70,17 @@ void p2(){
     }
     std::cout << "\n";
     int i = 0;
-    while(a[i] != 0){
-         i++;
+    while(a[i - 1] != 0){
         std::cin >> a[i];
+        i++;
+
     }
+    int i = 0;
+    while(a[i - 1] != 0){
+        std::cout << alimento[a[i]];
+        i++;
+    }
+    
     
 }
 int main(int argc, char** argv) {
