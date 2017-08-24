@@ -16,17 +16,17 @@ using namespace std;
 class recetas : public alimentos{
 public:
     void ingredientes(int *p){
-        std::cout << "00000" << "\n";
-        aux2[au] = *p;
-         std::cout << "00000" << "\n";
+        std::cout << "00001" << "\n";
+        //aux2[au] = *p;
+         std::cout << "00002" << "\n";
         std::cout << "  " << au << "  " << aux2[au] << "\n";
-         std::cout << "00000" << "\n";
+         std::cout << "00003" << "\n";
         p++;
-         std::cout << "00000" << "\n";
+         std::cout << "00004" << "\n";
         al[au] = *p;
-         std::cout << "00000" << "\n";
+         std::cout << "00005" << "\n";
         //std::cout << "al[aux]  "  << al[aux] << " aux2[aux] " << aux2[aux] << "\n";
-         std::cout << "00000" << "\n";
+         std::cout << "00006" << "\n";
         au++;
         
     }
