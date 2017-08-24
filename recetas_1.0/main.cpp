@@ -16,17 +16,11 @@ using namespace std;
 class recetas : public alimentos{
 public:
     void ingredientes(int *p){
-        std::cout << "00001" << "\n";
         aux2[au] = *p;
-         std::cout << "00002" << "\n";
         std::cout << "  " << au << "  " << aux2[au] << "\n";
-         std::cout << "00003" << "\n";
         p++;
-         std::cout << "00004" << "\n";
         al[au] = *p;
-         std::cout << "00005" << "\n";
         std::cout << "al[aux]  "  << al[au] << " aux2[aux] " << aux2[au] << "\n";
-         std::cout << "00006" << "\n";
         au++;
         
     }
@@ -59,24 +53,16 @@ private:
     int id2[9];
 };
 int main(int argc, char** argv) {
-    std::cout << "11111\n";
     pescados salmon;
-    std::cout << "11111\n";
     salmon.iniciar();
-    std::cout << "11111\n";
     verduras lechuga;
-    std::cout << "11111\n";
     lechuga.iniciar();
-    std::cout << "11111\n";
     //inicializado los alimentos.
     recetas gazpacho;
-    std::cout << "hola mundo\n";
     gazpacho.iniciar();
-    std::cout << "11111\n";
     gazpacho.ingredientes(lechuga.cal());//aqui tiene que retornar un puntero a un array
     gazpacho.ingredientes(salmon.cal());
     gazpacho.personas(20);
-    std::cout << "funciona\n";
     return 0;
 }
 

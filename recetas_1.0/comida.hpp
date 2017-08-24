@@ -63,13 +63,9 @@ public:
         }
     }
     int* cal(){
-        std::cout << "111111111" << endl;
         int* p = new int[2];
-        std::cout << "2222222222" << endl;
         p[0] = cali;
-        std::cout << "33333333" << endl;
         p[1] = idi;
-        std::cout << "4444444" << endl;
         return p;//tomar este ejemplo para retornar arrays i cadenas de arryas.
     }
     int id(){
@@ -101,7 +97,16 @@ public:
     }
 };
 class buey : public carnes{
-    
+    void iniciar(){
+    prot = 0;
+    gras = 0;
+    hidra = 0;
+    cali = 10;
+    idi = 5;
+    for(int i = 0; i < 5; i++) {
+        aux[i] = 0;
+    }
+   }
 };
 class pescados : public alimentos{
 public:
