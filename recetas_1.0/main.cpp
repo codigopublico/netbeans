@@ -73,7 +73,7 @@ void p2(){
     int i = 1;
     while(a[i - 1] != 0){
         i++;
-        std::cin >> a[i - 1];
+        std::cin >> a[i];
     }
     for(int ii = 0; ii < i; ii++){
         std::cout << a[ii] << "  ";
