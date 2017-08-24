@@ -146,7 +146,7 @@ public:
     gras = 0;
     hidra = 0;
     cali = 5;
-    idi = 4;
+    idi = 7;
     for(int i = 0; i < 5; i++) {
         aux[i] = 0;
     }
