@@ -64,15 +64,15 @@ void p1(){
 }
 void p2(){
     int a[20];
-    a[1] = 200;
+    a[0] = 200;
     std::cout << "Dime que el numero de  aliemento que  quieres tienes estos para escojer(para salir 0): ";
     for(int i = 0; i < 7; i++){
         std::cout << alimento[i] << "  " << i;
     }
     std::cout << "\n";
-    int i = 0;
+    int i = 1;
     while(a[i - 1] != 0){
-        std::cin >> a[i];
+        std::cin >> a[i - 1];
         i++;
     }
     for(int ii = 0; ii < i; ii++){
