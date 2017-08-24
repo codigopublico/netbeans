@@ -61,9 +61,6 @@ public:
             }
         }
     }
-    int id(){
-        return id;
-    }
     int cal(){
         
         return cali;//miarar de retornar un array para retornar todo.
@@ -143,7 +140,6 @@ public:
     gras = 0;
     hidra = 0;
     cali = 5;
-    id = 2;
     for(int i = 0; i < 5; i++) {
         aux[i] = 0;
     }
