@@ -72,7 +72,7 @@ int main(int argc, char** argv) {
     std::cout << "hola mundo\n";
     gazpacho.iniciar();
     std::cout << "11111\n";
-    //gazpacho.ingredientes(lechuga.cal());//aqui tiene que retornar un puntero a un array
+    gazpacho.ingredientes(lechuga.cal());//aqui tiene que retornar un puntero a un array
     //gazpacho.ingredientes(salmon.cal());
     gazpacho.personas(20);
     std::cout << "hola mundo\n";
