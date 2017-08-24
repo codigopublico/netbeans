@@ -64,7 +64,7 @@ void p1(){
 }
 void p2(){
     int a[20];
-    a[0] = 200;
+    a[1] = 200;
     std::cout << "Dime que el numero de  aliemento que  quieres tienes estos para escojer(para salir 0): ";
     for(int i = 0; i < 7; i++){
         std::cout << alimento[i] << "  " << i;
