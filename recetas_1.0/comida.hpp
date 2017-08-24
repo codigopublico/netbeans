@@ -34,7 +34,7 @@ public:
     int gras;
     int hidra;
     int cali;
-    int id;
+    int idi;
     void frie(){
         aux[0] = 1;
     }
@@ -67,14 +67,14 @@ public:
         return cali;//miarar de retornar un array para retornar todo.
     }
     int id(){
-        return id;
+        return idi;
     }
      void iniciar(){
     prot = 0;
     gras = 0;
     hidra = 0;
     cali = 0;
-    id = 4;
+    idi = 4;
     for(int i = 0; i < 5; i++) {
         aux[i] = 0;
     }
