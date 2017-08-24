@@ -69,13 +69,11 @@ void p2(){
         std::cout << alimento[i] << "  " << i;
     }
     std::cout << "\n";
-    int i = 0;
-    do{
-        i++;
-        std::cin >> a[i - 1];
-    }while(a[i - 0] != 0);
-    for(int ii = 0; ii < i; ii++){
-        std::cout << alimento(a[ii]) << "  ";
+    for(int i = 0;  a[i] != 0; i++){
+        std::cin >> a[i];
+    }
+    for(int ii = 0; a[ii] != 0; ii++){
+        std::cout << a[ii] << "  ";
     }
     
     
