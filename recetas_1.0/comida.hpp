@@ -62,10 +62,12 @@ public:
             }
         }
     }
-    void cal(){
-        r[0] = cali;
-        r[1] = id;
-        return *r;//miarar de retornar un array para retornar todo.
+    int id(){
+        return id;
+    }
+    int cal(){
+        
+        return cali;//miarar de retornar un array para retornar todo.
     }
      void iniciar(){
     prot = 0;

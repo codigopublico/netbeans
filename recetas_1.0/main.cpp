@@ -16,10 +16,9 @@ using namespace std;
 class recetas : public alimentos{
 public:
     int id2[];
-    void ingredientes(int *p2){
-        aux2[aux] = *p2;
-        *p2++;
-        int id2[aux] = *p2;
+    void ingredientes(int p2, int p){
+        aux2[aux] = p2;
+        int id2[aux] = p;
         std::cout << "  " << aux << "  " << aux2[aux] << "\n";
         aux++;
     }
@@ -54,8 +53,8 @@ int main(int argc, char** argv) {
     verduras lechuga;
     lechuga.iniciar();
     recetas gazpacho;
-    gazpacho.ingredientes(lechuga.cal());//aqui tiene que retornar un puntero a un array
-    gazpacho.ingredientes(salmon.cal());
+    gazpacho.ingredientes(lechuga.cal(), lechuga.id());//aqui tiene que retornar un puntero a un array
+    gazpacho.ingredientes(salmon.cal(), lechuga.id());
     gazpacho.personas(20);
     return 0;
 }
