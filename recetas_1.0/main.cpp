@@ -24,6 +24,7 @@ public:
         
     }
     void personas(int a){
+        //aqui hay un blcle infinito
             int cal = 20;
             std::cout << "h";
             int aux3 = 0;
