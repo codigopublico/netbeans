@@ -66,7 +66,7 @@ void p2(){
     int a[20];
     std::cout << "Dime que el numero de  aliemento que  quieres tienes estos para escojer(para salir 50): ";
     for(int i = 0; i < 7; i++){
-        std::cout << alimento[i] << "  " << i;
+        std::cout << alimento[i] << "  " << i << "\n";
     }
     std::cout << "\n";
     int i = 0;
@@ -78,7 +78,6 @@ void p2(){
     for(int ii = 0; a[ii] != -1; ii++){
         std::cout << alimento[a[ii]] << "  ";
     }
-    
     
 }
 int main(int argc, char** argv) {
