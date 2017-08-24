@@ -20,6 +20,7 @@ public:
         std::cout << "  " << aux << "  " << aux2[aux] << "\n";
         p++;
         al[aux] = *p;
+        std::cout << "al[aux]  "  << al[aux] << " aux2[aux] " << aux2[aux] << "\n";
         aux++;
         
     }
