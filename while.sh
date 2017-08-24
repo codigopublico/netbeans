@@ -1,4 +1,4 @@
 while [ True  ]; do
 /./home/prog/NetBeansProjects/sbirgit.sh  "while"
-sleep 120
+sleep 240
 done
