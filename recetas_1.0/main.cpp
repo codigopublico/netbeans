@@ -17,7 +17,6 @@ class recetas : public alimentos{
 public:
     void ingredientes(int p2, int p){
         aux2[aux] = p2;
-        al = p;
         std::cout << "  " << aux << "  " << aux2[aux] << "\n";
         al[aux] = p;
         aux++;
