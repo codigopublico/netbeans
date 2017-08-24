@@ -105,7 +105,7 @@ void p2(){
         }
         if(a[ii] == 4){
             atun p5;
-            atun.iniciar();
+            p5.iniciar();
             gazpacho.ingredientes(p5.cal());
             
         }
