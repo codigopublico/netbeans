@@ -79,7 +79,37 @@ void p2(){
         
     }while(a[i - 1] != -1);
     for(int ii = 0; a[ii] != -1; ii++){
-        std::cout << "Poniendo alimento   "  << alimento[a[ii]] << "  ";
+        std::cout << "Poniendo alimento   "  << alimento[a[ii]] << "  \n";
+        //aqui estaran los futuros problemas......
+        if(a[ii] == 0){
+            carnes p1;
+            p1.iniciar();
+        }
+        if(a[ii] == 1){
+           pescados p2;
+            p2.iniciar();
+        }
+        if(a[ii]  == 2){
+            merluza p3;
+            p3.iniciar();
+        }
+        if(a[ii]  == 3){
+            salmon p4;
+            p4.iniciar();
+        }
+        if(a[ii] == 4){
+            atun p5;
+            atun.iniciar();
+            
+        }
+        if(a[ii]  == 5){
+            buey p6;
+            p6.iniciar();
+        }
+        if(a[ii]  == 6){
+            verduras p7;
+            p7.iniciar();
+        }
         
     }
     
