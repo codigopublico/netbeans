@@ -24,31 +24,31 @@ public:
         
     }
     void personas(int a){
-        //aqui hay un blcle infinito
+        //aqui hay un blcle infinito ya que falta las calorias de todos.
             int cal = 20;
-            std::cout << "h";
+            std::cout << "1";
             int aux3 = 0;
-             std::cout << "h";
+             std::cout << "2";
             cal = cal * a;
-             std::cout << "h";
+             std::cout << "3";
             cal = cal /au;
-             std::cout << "h";
+             std::cout << "4";
             for(int i = 0; i < au; i++){
-                 std::cout << "h";
+                 std::cout << "5";
                 while(aux2[i] < cal){
-                     std::cout << "h";
+                     std::cout << "6";
                     aux3++;
-                     std::cout << "h";
+                     std::cout << "7";
                     aux2[i] = aux2[i] * 2;
-                     std::cout << "h";
+                     std::cout << "8";
             }
                 aux2[i] = aux3;
-                 std::cout << "h";
+                 std::cout << "9";
                 aux3 = 0;
-                 std::cout << "h";
+                 std::cout << "10";
             }
             for(int i = 0; i < au; i++){
-                 std::cout << "h";
+                 std::cout << "11";
                 std::cout << "ingredientes " << alimento[al[i]]  << " cantidad " << aux2[i] << " "  << "\n";//ponerle el nombre de los igredientes
                 
             }
