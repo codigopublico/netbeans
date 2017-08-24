@@ -34,7 +34,6 @@ public:
     int gras;
     int hidra;
     int cali;
-    int id;
     void frie(){
         aux[0] = 1;
     }
