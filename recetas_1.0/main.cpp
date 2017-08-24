@@ -15,10 +15,9 @@ using namespace std;
  */
 class recetas : public alimentos{
 public:
-    int id2[];
     void ingredientes(int p2){
         aux2[aux] = p2;
-        int id2[aux] = p;
+        id2[aux] = p;
         std::cout << "  " << aux << "  " << aux2[aux] << "\n";
         aux++;
     }
@@ -46,6 +45,7 @@ public:
 private:
     int aux = 0;
     int aux2[9];
+    int id2[9];
 };
 int main(int argc, char** argv) {
     pescados salmon;
