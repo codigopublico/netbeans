@@ -24,6 +24,7 @@ void impestados(int a){
     std::cout << "El alimento esta " << estado[a] << "\n";
 }
 string alimento[] ={"carnes", "pescados", "merluza", "salmon", "atun", "buey", "verduras"};
+int r[2];
 class alimentos{
 public:
     int aux[4];
@@ -62,7 +63,6 @@ public:
         }
     }
     int cal(){
-        int r[2];
         r[0] = cali;
         r[1] = id;
         int *p;
