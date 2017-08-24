@@ -24,8 +24,6 @@ void impestados(int a){
     std::cout << "El alimento esta " << estado[a] << "\n";
 }
 string alimento[] ={"carnes", "pescados", "merluza", "salmon", "atun", "buey", "verduras"};
-int r[2];
-int *p = &r[0];
 class alimentos{
 public:
     int aux[4];
@@ -66,7 +64,7 @@ public:
     void cal(){
         r[0] = cali;
         r[1] = id;
-        return *p;//miarar de retornar un array para retornar todo.
+        return *r;//miarar de retornar un array para retornar todo.
     }
      void iniciar(){
     prot = 0;
