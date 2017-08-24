@@ -109,7 +109,7 @@ public:
     gras = 0;
     hidra = 0;
     cali = 10;
-    idi = 5;
+    idi = 2;
    }
 };
 class merluza : public pescados{
@@ -152,7 +152,7 @@ public:
     gras = 0;
     hidra = 0;
     cali = 5;
-    idi = 1;
+    idi = 6;
     for(int i = 0; i < 5; i++) {
         aux[i] = 0;
     }
