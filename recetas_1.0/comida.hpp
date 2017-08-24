@@ -63,7 +63,7 @@ public:
         }
     }
     int* cal(){
-        int array[] = new int[2];
+        int array[2] = new int[2];
         int* p = array;
         array[0] = cali;
         array[1] = idi;
