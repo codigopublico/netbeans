@@ -15,10 +15,11 @@ using namespace std;
  */
 class recetas : public alimentos{
 public:
-    void ingredientes(int p2, int p){
-        aux2[aux] = p2;
+    void ingredientes(int *p){
+        aux2[aux] = *p;
         std::cout << "  " << aux << "  " << aux2[aux] << "\n";
-        al[aux] = p;
+        p++;
+        al[aux] = *p;
         aux++;
         
     }
@@ -37,7 +38,7 @@ public:
                 aux3 = 0;
             }
             for(int i = 0; i < aux; i++){
-                std::cout << "ingredientes "  << alimentos[al[i]] << << "cantidad " << aux2[i] << " " << al[i] << "\n";
+                std::cout << "ingredientes "  << alimentos[al[i]] << "cantidad " << aux2[i] << " " << al[i] << "\n";
             }
     }
     void Tiempo(){
@@ -57,8 +58,8 @@ int main(int argc, char** argv) {
     //inicializado los alimentos.
     recetas gazpacho;
     gazpacho.iniciar();
-    gazpacho.ingredientes(lechuga.cal(), lechuga.id());//aqui tiene que retornar un puntero a un array
-    gazpacho.ingredientes(salmon.cal(), salmon.id());
+    gazpacho.ingredientes(lechuga.cal());//aqui tiene que retornar un puntero a un array
+    gazpacho.ingredientes(salmon.cal());
     gazpacho.personas(20);
     return 0;
 }

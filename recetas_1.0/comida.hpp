@@ -67,7 +67,7 @@ public:
         int r[2];
         r[0] = cali;
         r[1] = idi;
-        *p = &r[0];
+        *p = r[0];
         return *p;//miarar de retornar un array para retornar todo.
     }
     int id(){
