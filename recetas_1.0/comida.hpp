@@ -70,7 +70,7 @@ public:
         std::cout << "33333333" << endl;
         p[1] = idi;
         std::cout << "4444444" << endl;
-        return p;//miarar de retornar un array para retornar todo.
+        return p;//tomar este ejemplo para retornar arrays i cadenas de arryas.
     }
     int id(){
         return idi;
