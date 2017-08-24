@@ -20,7 +20,7 @@ public:
         std::cout << "  " << au << "  " << aux2[au] << "\n";
         p++;
         al[au] = *p;
-        std::cout << "al[aux]  "  << al[au] << " aux2[aux] " << aux2[au] << "\n";
+        std::cout << "El igrediente que pusiste es :  " << al[au] << "\n";
         au++;
         
     }
