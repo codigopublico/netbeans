@@ -145,6 +145,7 @@ public:
     gras = 0;
     hidra = 0;
     cali = 5;
+    idi = 4;
     for(int i = 0; i < 5; i++) {
         aux[i] = 0;
     }
@@ -187,7 +188,9 @@ class cerdo : public carnes{
     
 };
 class sardina : public pescados{
-    
+    void iniciar(){
+    idi = 1;
+    }
 };
 class frutas : public alimentos{
     
