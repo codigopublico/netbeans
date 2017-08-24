@@ -103,6 +103,7 @@ public:
     gras = 0;
     hidra = 0;
     cali = 10;
+    idi = 1;
    }
 };
 class merluza : public pescados{

@@ -36,7 +36,7 @@ public:
                 aux3 = 0;
             }
             for(int i = 0; i < aux; i++){
-                std::cout << "Numeros de ingredientes" <<alimento[2] << i << "  " << aux2[i] << "\n";
+                std::cout << "ingredientes " <<alimento[2] << i << "cantidad " << aux2[i] << "\n";
             }
     }
     void Tiempo(){
