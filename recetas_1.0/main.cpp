@@ -75,7 +75,7 @@ void p2(){
         i++;
 
     }
-    int i = 0;
+    i = 0;
     while(a[i - 1] != 0){
         std::cout << alimento[a[i]];
         i++;
