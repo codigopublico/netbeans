@@ -59,8 +59,8 @@ int main(int argc, char** argv) {
     //inicializado los alimentos.
     recetas gazpacho;
     gazpacho.iniciar();
-    gazpacho.ingredientes(lechuga.cal());//aqui tiene que retornar un puntero a un array
-    gazpacho.ingredientes(salmon.cal());
+    //gazpacho.ingredientes(lechuga.cal());//aqui tiene que retornar un puntero a un array
+    //gazpacho.ingredientes(salmon.cal());
     gazpacho.personas(20);
     return 0;
 }
