@@ -149,6 +149,7 @@ public:
     }
 };
 class atun : public pescados{
+public:
      void iniciar(){
     prot = 0;
     gras = 0;
