@@ -14,7 +14,7 @@
 using namespace std;
 
 /*
- * 
+ * Ejercicicio numero 6.
  */
 class arbol{
 public:
@@ -44,7 +44,6 @@ public:
     void abre(){
         vaux = 1;
         std::cout << "\nAbriendo las valvulas\n";
-        
     }
     int get(){
         return vaux;
@@ -178,7 +177,7 @@ private:
     bujias Oaux2;
     valvulas Oaux3;
 };
-class vehiculo : public motor,  intrumentos{
+class vehiculo : public   intrumentos, motor{
 public:
     string color;
     int pot;
@@ -210,9 +209,12 @@ public:
 };
 int main(int argc, char** argv) {
     vehiculo ferri;
+    intrumentos prueva;
+    prueva.botones();
+    prueva.panel();
     ferri.crea("Rojo", 200);
     ferri.estado();
-    ferri.botones(1, 1);
+    ferri.;
     ferri.acce();
     ferri.fren();
     ferri.panel();
