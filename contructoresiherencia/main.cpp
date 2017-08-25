@@ -25,15 +25,14 @@ public:
 };
 class ciudad : public patinete{
 public:
-    ciudad(int c) : patinete(){
-        a = c;
+    ciudad() : patinete(){
+        
     }
-
 };
 int main(int argc, char** argv) {
     patinete juan(5);
     juan.imprimir();
-    ciudad manolo(3);
+    ciudad manolo();
     manolo.imprimir();
     return 0;
 }
