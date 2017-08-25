@@ -21,6 +21,8 @@ class alimentos{
 public:
     int aux[4];
     int ii;
+    int pre;
+    int canti;
     //propiedades del alimento
     int prot;
     int gras;
@@ -60,6 +62,13 @@ public:
     cali = 0;
     for(int i = 0; i < 5; i++) {
         aux[i] = 0;
+    }
+    void comprar(){
+        return c * pre;
+        
+    }
+    void cantidad(int c){
+        canti = c;
     }
     }
 
