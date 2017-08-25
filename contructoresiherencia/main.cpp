@@ -11,7 +11,7 @@
 using namespace std;
 
 /*
- * 
+ * Ejemplo de classe herencia con constructores simple.
  */
 class patinete{
 public:
@@ -23,16 +23,17 @@ public:
         std::cout << a << " " ;
     }
 };
-class ciudad : public patinete{
+class pciudad : public patinete{
 public:
-    ciudad() : patinete(){
+    pciudad(int c) : patinete(c){
         
     }
+
 };
 int main(int argc, char** argv) {
     patinete juan(5);
     juan.imprimir();
-    ciudad manolo();
+    pciudad manolo(45);
     manolo.imprimir();
     return 0;
 }
