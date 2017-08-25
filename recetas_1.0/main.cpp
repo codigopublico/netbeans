@@ -26,29 +26,19 @@ public:
     void personas(int a){
         //aqui hay un blcle infinito ya que falta las calorias de todos.
             int cal = 20;
-            std::cout << "1";
             int aux3 = 0;
-             std::cout << "2";
             cal = cal * a;
-             std::cout << "3";
             cal = cal /au;
-             std::cout << "4";
+             std::cout << cal << "cal \n";
             for(int i = 0; i < au; i++){
-                 std::cout << "5";
                 while(aux2[i] < cal){
-                     std::cout << "6";
                     aux3++;
-                     std::cout << "7";
                     aux2[i] = aux2[i] * 2;
-                     std::cout << "8";
             }
                 aux2[i] = aux3;
-                 std::cout << "9";
                 aux3 = 0;
-                 std::cout << "10";
             }
             for(int i = 0; i < au; i++){
-                 std::cout << "11";
                 std::cout << "ingredientes " << alimento[al[i]]  << " cantidad " << aux2[i] << " "  << "\n";//ponerle el nombre de los igredientes
                 
             }
@@ -77,9 +67,9 @@ void p1(){
 void p2(){
     int a[20];
     int p;
-    std::cout << "Dime que el numero de  aliemento que  quieres tienes estos para escojer(para salir 50): ";
     std::cout << "Dime para cuantoas personas es la recestas: \n";
     std::cin >> p;
+    std::cout << "Dime que el numero de  aliemento que  quieres tienes estos para escojer(para salir -1): ";
     for(int i = 0; i < 7; i++){
         std::cout << alimento[i] << "  " << i << "\n";
     }
@@ -132,7 +122,7 @@ void p2(){
             gazpacho.ingredientes(p7.cal());
         }
     }
-            gazpacho.personas(20);
+            gazpacho.personas(p);
     
 }
 int main(int argc, char** argv) {

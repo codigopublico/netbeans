@@ -75,7 +75,7 @@ public:
     prot = 0;
     gras = 0;
     hidra = 0;
-    cali = 0;
+    cali = 1;
     idi = 4;
     for(int i = 0; i < 5; i++) {
         aux[i] = 0;
@@ -92,7 +92,7 @@ public:
     prot = 0;
     gras = 0;
     hidra = 0;
-    cali = 0;
+    cali = 2;
     idi = 0;
     }
 };
@@ -115,7 +115,7 @@ public:
     prot = 0;
     gras = 0;
     hidra = 0;
-    cali = 10;
+    cali = 1;
     idi = 1;
     for(int i = 0; i < 5; i++) {
         aux[i] = 0;
@@ -128,7 +128,7 @@ public:
     prot = 0;
     gras = 0;
     hidra = 0;
-    cali = 0;
+    cali = 2;
     idi = 2;
     for(int i = 0; i < 5; i++) {
         aux[i] = 0;
@@ -141,7 +141,7 @@ public:
     prot = 0;
     gras = 0;
     hidra = 0;
-    cali = 0;
+    cali = 3;
     idi = 3;
     for(int i = 0; i < 5; i++) {
         aux[i] = 0;
@@ -154,7 +154,7 @@ public:
     prot = 0;
     gras = 0;
     hidra = 0;
-    cali = 0;
+    cali = 4;
     idi = 4;
     for(int i = 0; i < 5; i++) {
         aux[i] = 0;
@@ -178,7 +178,7 @@ class judias : public verduras{
      void iniciar(){
     prot = 0;
     gras = 0;
-    hidra = 0;
+    hidra = 3;
     cali = 5;
     for(int i = 0; i < 5; i++) {
         aux[i] = 0;
@@ -190,7 +190,7 @@ class espinacas : public verduras{
     prot = 0;
     gras = 0;
     hidra = 0;
-    cali = 0;
+    cali = 2;
     for(int i = 0; i < 5; i++) {
         aux[i] = 0;
     }
@@ -201,7 +201,7 @@ class ternera : public carnes{
     prot = 0;
     gras = 0;
     hidra = 0;
-    cali = 0;
+    cali = 2;
     for(int i = 0; i < 5; i++) {
         aux[i] = 0;
     }
@@ -213,6 +213,7 @@ class cerdo : public carnes{
 class sardina : public pescados{
     void iniciar(){
     idi = 1;
+    cali = 3;
     }
 };
 class frutas : public alimentos{
