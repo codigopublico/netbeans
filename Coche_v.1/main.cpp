@@ -14,7 +14,7 @@
 using namespace std;
 
 /*
- * Ejercicicio numero 6.
+ * Ejercicicio numero 6. Le fallan las velocidades.
  */
 class arbol{
 public:
@@ -61,7 +61,7 @@ public:
 };
 class revol{
 public:
-    int rev;
+    int rev = 0;
     void setrev(int r){
         rev = r;
     }
@@ -100,8 +100,8 @@ private:
 };
 class leds{
 public:
-    int tra;//Leds traceros
-    int del;//leds delanteros
+    int tra = 0;//Leds traceros
+    int del = 0;//leds delanteros
     void traceros(int a){
         if(a > 0){
             tra = 1;
@@ -122,12 +122,12 @@ public:
 private:
     reles Orel;
 };
-class intrumentos : public leds, revol, velocimetro{
+class intrumentos : public leds, public  revol, public  velocimetro{
 public:
     void panel(){
         std::cout << "\nEl led delatera esta " << del << "El led trasero esta " << tra;
         std::cout << "\nEl panel de revoluciones mustra " <<  rev;
-        std::cout << "\nEl panel de velocidad muestra\n  " << vel;
+        std::cout << "\nEl panel de velocidad muestra  " << vel;
     }
     void botones(int d, int t){
         del = d;
@@ -135,7 +135,7 @@ public:
     }
     
 };
-class motor : public revol, velocimetro{
+class motor : public revol, public  velocimetro{
 public:
     int arra; //Variable que indica si el motor esta arrancado
     void arrancar(){
@@ -160,13 +160,14 @@ public:
             }
             rev = rev + 30;
             vel = vel + 30;
+            std::cout << "\n accelerando \n";
         }
         void fren(){
             rev = rev - 30;
             if(rev<0){
                 rev = 0;
             }
-            vel = vel + 30;
+            vel = vel - 30;
         }
         void parar(){
             rev = 0;
@@ -177,7 +178,7 @@ private:
     bujias Oaux2;
     valvulas Oaux3;
 };
-class vehiculo : public   intrumentos, motor{
+class vehiculo : public   intrumentos, public motor{
 public:
     string color;
     int pot;
@@ -209,14 +210,11 @@ public:
 };
 int main(int argc, char** argv) {
     vehiculo ferri;
-    intrumentos prueva;
-    prueva.botones();
-    prueva.panel();
+    ferri.arrancar();
     ferri.crea("Rojo", 200);
-    ferri.estado();
-    ferri.;
+    ferri.botones(1, 1);
+    ferri.panel();
     ferri.acce();
-    ferri.fren();
     ferri.panel();
     return 0;
 }
