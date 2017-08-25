@@ -14,7 +14,7 @@
 using namespace std;
 
 /*
- * Ejercicicio numero 6. Le fallan las velocidades.
+ * Ejercicicio numero 6. Le fallan las velocidades es de la herncia. hacer lo de las revoluciones.
  */
 class arbol{
 public:
@@ -210,9 +210,9 @@ public:
 };
 int main(int argc, char** argv) {
     vehiculo ferri;
-    ferri.arrancar();
     ferri.crea("Rojo", 200);
     ferri.botones(1, 1);
+    ferri.arrancar();
     ferri.panel();
     ferri.acce();
     ferri.panel();
