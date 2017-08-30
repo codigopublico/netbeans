@@ -1,0 +1,1058 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configurationDescriptor version="80">
+  <logicalFolder name="root" displayName="root" projectFiles="true" kind="ROOT">
+    <df name="libtorrent-rasterbar-0.14.7" root=".">
+      <df name="bindings">
+        <df name="python">
+          <df name="src">
+            <in>alert.cpp</in>
+            <in>big_number.cpp</in>
+            <in>converters.cpp</in>
+            <in>create_torrent.cpp</in>
+            <in>datetime.cpp</in>
+            <in>entry.cpp</in>
+            <in>extensions.cpp</in>
+            <in>filesystem.cpp</in>
+            <in>fingerprint.cpp</in>
+            <in>gil.hpp</in>
+            <in>ip_filter.cpp</in>
+            <in>magnet_uri.cpp</in>
+            <in>module.cpp</in>
+            <in>optional.hpp</in>
+            <in>peer_info.cpp</in>
+            <in>peer_plugin.cpp</in>
+            <in>session.cpp</in>
+            <in>session_settings.cpp</in>
+            <in>torrent.cpp</in>
+            <in>torrent_handle.cpp</in>
+            <in>torrent_info.cpp</in>
+            <in>torrent_status.cpp</in>
+            <in>utility.cpp</in>
+            <in>version.cpp</in>
+          </df>
+        </df>
+      </df>
+      <df name="docs">
+      </df>
+      <df name="examples">
+        <in>client_test.cpp</in>
+        <in>dump_torrent.cpp</in>
+        <in>enum_if.cpp</in>
+        <in>make_torrent.cpp</in>
+        <in>simple_client.cpp</in>
+      </df>
+      <df name="include">
+        <df name="libtorrent">
+          <df name="asio">
+            <df name="detail">
+              <in>bind_handler.hpp</in>
+              <in>buffer_resize_guard.hpp</in>
+              <in>buffered_stream_storage.hpp</in>
+              <in>call_stack.hpp</in>
+              <in>const_buffers_iterator.hpp</in>
+              <in>consuming_buffers.hpp</in>
+              <in>deadline_timer_service.hpp</in>
+              <in>descriptor_ops.hpp</in>
+              <in>dev_poll_reactor.hpp</in>
+              <in>dev_poll_reactor_fwd.hpp</in>
+              <in>epoll_reactor.hpp</in>
+              <in>epoll_reactor_fwd.hpp</in>
+              <in>event.hpp</in>
+              <in>fd_set_adapter.hpp</in>
+              <in>handler_alloc_helpers.hpp</in>
+              <in>handler_base_from_member.hpp</in>
+              <in>handler_invoke_helpers.hpp</in>
+              <in>handler_queue.hpp</in>
+              <in>hash_map.hpp</in>
+              <in>indirect_handler_queue.hpp</in>
+              <in>io_control.hpp</in>
+              <in>kqueue_reactor.hpp</in>
+              <in>kqueue_reactor_fwd.hpp</in>
+              <in>local_free_on_block_exit.hpp</in>
+              <in>mutex.hpp</in>
+              <in>noncopyable.hpp</in>
+              <in>null_event.hpp</in>
+              <in>null_mutex.hpp</in>
+              <in>null_signal_blocker.hpp</in>
+              <in>null_thread.hpp</in>
+              <in>null_tss_ptr.hpp</in>
+              <in>old_win_sdk_compat.hpp</in>
+              <in>pipe_select_interrupter.hpp</in>
+              <in>pop_options.hpp</in>
+              <in>posix_event.hpp</in>
+              <in>posix_fd_set_adapter.hpp</in>
+              <in>posix_mutex.hpp</in>
+              <in>posix_signal_blocker.hpp</in>
+              <in>posix_thread.hpp</in>
+              <in>posix_tss_ptr.hpp</in>
+              <in>push_options.hpp</in>
+              <in>reactive_descriptor_service.hpp</in>
+              <in>reactive_serial_port_service.hpp</in>
+              <in>reactive_socket_service.hpp</in>
+              <in>reactor_op_queue.hpp</in>
+              <in>resolver_service.hpp</in>
+              <in>scoped_lock.hpp</in>
+              <in>select_interrupter.hpp</in>
+              <in>select_reactor.hpp</in>
+              <in>select_reactor_fwd.hpp</in>
+              <in>service_base.hpp</in>
+              <in>service_id.hpp</in>
+              <in>service_registry.hpp</in>
+              <in>service_registry_fwd.hpp</in>
+              <in>signal_blocker.hpp</in>
+              <in>signal_init.hpp</in>
+              <in>socket_holder.hpp</in>
+              <in>socket_ops.hpp</in>
+              <in>socket_option.hpp</in>
+              <in>socket_select_interrupter.hpp</in>
+              <in>socket_types.hpp</in>
+              <in>strand_service.hpp</in>
+              <in>task_io_service.hpp</in>
+              <in>task_io_service_2lock.hpp</in>
+              <in>task_io_service_fwd.hpp</in>
+              <in>thread.hpp</in>
+              <in>throw_error.hpp</in>
+              <in>timer_queue.hpp</in>
+              <in>timer_queue_base.hpp</in>
+              <in>tss_ptr.hpp</in>
+              <in>win_event.hpp</in>
+              <in>win_fd_set_adapter.hpp</in>
+              <in>win_iocp_handle_service.hpp</in>
+              <in>win_iocp_io_service.hpp</in>
+              <in>win_iocp_io_service_fwd.hpp</in>
+              <in>win_iocp_serial_port_service.hpp</in>
+              <in>win_iocp_socket_service.hpp</in>
+              <in>win_mutex.hpp</in>
+              <in>win_signal_blocker.hpp</in>
+              <in>win_thread.hpp</in>
+              <in>win_tss_ptr.hpp</in>
+              <in>wince_thread.hpp</in>
+              <in>winsock_init.hpp</in>
+              <in>wrapped_handler.hpp</in>
+            </df>
+            <df name="impl">
+            </df>
+            <df name="ip">
+              <df name="detail">
+                <in>socket_option.hpp</in>
+              </df>
+              <in>address.hpp</in>
+              <in>address_v4.hpp</in>
+              <in>address_v6.hpp</in>
+              <in>basic_endpoint.hpp</in>
+              <in>basic_resolver.hpp</in>
+              <in>basic_resolver_entry.hpp</in>
+              <in>basic_resolver_iterator.hpp</in>
+              <in>basic_resolver_query.hpp</in>
+              <in>host_name.hpp</in>
+              <in>icmp.hpp</in>
+              <in>multicast.hpp</in>
+              <in>resolver_query_base.hpp</in>
+              <in>resolver_service.hpp</in>
+              <in>tcp.hpp</in>
+              <in>udp.hpp</in>
+              <in>unicast.hpp</in>
+              <in>v6_only.hpp</in>
+            </df>
+            <df name="local">
+              <in>basic_endpoint.hpp</in>
+              <in>connect_pair.hpp</in>
+              <in>datagram_protocol.hpp</in>
+              <in>stream_protocol.hpp</in>
+            </df>
+            <df name="posix">
+              <in>basic_descriptor.hpp</in>
+              <in>basic_stream_descriptor.hpp</in>
+              <in>descriptor_base.hpp</in>
+              <in>stream_descriptor.hpp</in>
+              <in>stream_descriptor_service.hpp</in>
+            </df>
+            <df name="ssl">
+              <df name="detail">
+                <in>openssl_context_service.hpp</in>
+                <in>openssl_init.hpp</in>
+                <in>openssl_operation.hpp</in>
+                <in>openssl_stream_service.hpp</in>
+                <in>openssl_types.hpp</in>
+              </df>
+              <in>basic_context.hpp</in>
+              <in>context.hpp</in>
+              <in>context_base.hpp</in>
+              <in>context_service.hpp</in>
+              <in>stream.hpp</in>
+              <in>stream_base.hpp</in>
+              <in>stream_service.hpp</in>
+            </df>
+            <df name="windows">
+              <in>basic_handle.hpp</in>
+              <in>basic_random_access_handle.hpp</in>
+              <in>basic_stream_handle.hpp</in>
+              <in>random_access_handle.hpp</in>
+              <in>random_access_handle_service.hpp</in>
+              <in>stream_handle.hpp</in>
+              <in>stream_handle_service.hpp</in>
+            </df>
+            <in>basic_datagram_socket.hpp</in>
+            <in>basic_deadline_timer.hpp</in>
+            <in>basic_io_object.hpp</in>
+            <in>basic_raw_socket.hpp</in>
+            <in>basic_serial_port.hpp</in>
+            <in>basic_socket.hpp</in>
+            <in>basic_socket_acceptor.hpp</in>
+            <in>basic_socket_iostream.hpp</in>
+            <in>basic_socket_streambuf.hpp</in>
+            <in>basic_stream_socket.hpp</in>
+            <in>basic_streambuf.hpp</in>
+            <in>buffer.hpp</in>
+            <in>buffered_read_stream.hpp</in>
+            <in>buffered_read_stream_fwd.hpp</in>
+            <in>buffered_stream.hpp</in>
+            <in>buffered_stream_fwd.hpp</in>
+            <in>buffered_write_stream.hpp</in>
+            <in>buffered_write_stream_fwd.hpp</in>
+            <in>buffers_iterator.hpp</in>
+            <in>completion_condition.hpp</in>
+            <in>datagram_socket_service.hpp</in>
+            <in>deadline_timer.hpp</in>
+            <in>deadline_timer_service.hpp</in>
+            <in>error.hpp</in>
+            <in>error_code.hpp</in>
+            <in>handler_alloc_hook.hpp</in>
+            <in>handler_invoke_hook.hpp</in>
+            <in>io_service.hpp</in>
+            <in>is_read_buffered.hpp</in>
+            <in>is_write_buffered.hpp</in>
+            <in>placeholders.hpp</in>
+            <in>raw_socket_service.hpp</in>
+            <in>read.hpp</in>
+            <in>read_at.hpp</in>
+            <in>read_until.hpp</in>
+            <in>serial_port.hpp</in>
+            <in>serial_port_base.hpp</in>
+            <in>serial_port_service.hpp</in>
+            <in>socket_acceptor_service.hpp</in>
+            <in>socket_base.hpp</in>
+            <in>ssl.hpp</in>
+            <in>strand.hpp</in>
+            <in>stream_socket_service.hpp</in>
+            <in>streambuf.hpp</in>
+            <in>system_error.hpp</in>
+            <in>thread.hpp</in>
+            <in>time_traits.hpp</in>
+            <in>version.hpp</in>
+            <in>write.hpp</in>
+            <in>write_at.hpp</in>
+          </df>
+          <df name="aux_">
+            <in>session_impl.hpp</in>
+          </df>
+          <df name="extensions">
+            <in>logger.hpp</in>
+            <in>metadata_transfer.hpp</in>
+            <in>smart_ban.hpp</in>
+            <in>ut_metadata.hpp</in>
+            <in>ut_pex.hpp</in>
+          </df>
+          <df name="kademlia">
+            <in>closest_nodes.hpp</in>
+            <in>dht_tracker.hpp</in>
+            <in>find_data.hpp</in>
+            <in>logging.hpp</in>
+            <in>msg.hpp</in>
+            <in>node.hpp</in>
+            <in>node_entry.hpp</in>
+            <in>node_id.hpp</in>
+            <in>observer.hpp</in>
+            <in>refresh.hpp</in>
+            <in>routing_table.hpp</in>
+            <in>rpc_manager.hpp</in>
+            <in>traversal_algorithm.hpp</in>
+          </df>
+          <in>GeoIP.h</in>
+          <in>alert.hpp</in>
+          <in>alert_types.hpp</in>
+          <in>asio.hpp</in>
+          <in>assert.hpp</in>
+          <in>bandwidth_limit.hpp</in>
+          <in>bandwidth_manager.hpp</in>
+          <in>bandwidth_queue_entry.hpp</in>
+          <in>bencode.hpp</in>
+          <in>bitfield.hpp</in>
+          <in>broadcast_socket.hpp</in>
+          <in>bt_peer_connection.hpp</in>
+          <in>buffer.hpp</in>
+          <in>chained_buffer.hpp</in>
+          <in>config.hpp</in>
+          <in>connection_queue.hpp</in>
+          <in>create_torrent.hpp</in>
+          <in>debug.hpp</in>
+          <in>disk_buffer_holder.hpp</in>
+          <in>disk_io_thread.hpp</in>
+          <in>entry.hpp</in>
+          <in>enum_net.hpp</in>
+          <in>error_code.hpp</in>
+          <in>escape_string.hpp</in>
+          <in>extensions.hpp</in>
+          <in>file.hpp</in>
+          <in>file_pool.hpp</in>
+          <in>file_storage.hpp</in>
+          <in>fingerprint.hpp</in>
+          <in>gzip.hpp</in>
+          <in>hasher.hpp</in>
+          <in>http_connection.hpp</in>
+          <in>http_parser.hpp</in>
+          <in>http_stream.hpp</in>
+          <in>http_tracker_connection.hpp</in>
+          <in>identify_client.hpp</in>
+          <in>instantiate_connection.hpp</in>
+          <in>intrusive_ptr_base.hpp</in>
+          <in>invariant_check.hpp</in>
+          <in>io.hpp</in>
+          <in>ip_filter.hpp</in>
+          <in>lazy_entry.hpp</in>
+          <in>lsd.hpp</in>
+          <in>magnet_uri.hpp</in>
+          <in>natpmp.hpp</in>
+          <in>parse_url.hpp</in>
+          <in>pch.hpp</in>
+          <in>pe_crypto.hpp</in>
+          <in>peer.hpp</in>
+          <in>peer_connection.hpp</in>
+          <in>peer_id.hpp</in>
+          <in>peer_info.hpp</in>
+          <in>peer_request.hpp</in>
+          <in>piece_block_progress.hpp</in>
+          <in>piece_picker.hpp</in>
+          <in>policy.hpp</in>
+          <in>proxy_base.hpp</in>
+          <in>random_sample.hpp</in>
+          <in>session.hpp</in>
+          <in>session_settings.hpp</in>
+          <in>session_status.hpp</in>
+          <in>size_type.hpp</in>
+          <in>socket.hpp</in>
+          <in>socket_type.hpp</in>
+          <in>socks4_stream.hpp</in>
+          <in>socks5_stream.hpp</in>
+          <in>ssl_stream.hpp</in>
+          <in>stat.hpp</in>
+          <in>storage.hpp</in>
+          <in>time.hpp</in>
+          <in>torrent.hpp</in>
+          <in>torrent_handle.hpp</in>
+          <in>torrent_info.hpp</in>
+          <in>tracker_manager.hpp</in>
+          <in>udp_socket.hpp</in>
+          <in>udp_tracker_connection.hpp</in>
+          <in>upnp.hpp</in>
+          <in>utf8.hpp</in>
+          <in>variant_stream.hpp</in>
+          <in>version.hpp</in>
+          <in>web_peer_connection.hpp</in>
+          <in>xml_parse.hpp</in>
+        </df>
+      </df>
+      <df name="m4">
+      </df>
+      <df name="src">
+        <df name="kademlia">
+          <in>closest_nodes.cpp</in>
+          <in>dht_tracker.cpp</in>
+          <in>find_data.cpp</in>
+          <in>node.cpp</in>
+          <in>node_id.cpp</in>
+          <in>refresh.cpp</in>
+          <in>routing_table.cpp</in>
+          <in>rpc_manager.cpp</in>
+          <in>traversal_algorithm.cpp</in>
+        </df>
+        <in>GeoIP.c</in>
+        <in>alert.cpp</in>
+        <in>assert.cpp</in>
+        <in>broadcast_socket.cpp</in>
+        <in>bt_peer_connection.cpp</in>
+        <in>connection_queue.cpp</in>
+        <in>create_torrent.cpp</in>
+        <in>disk_buffer_holder.cpp</in>
+        <in>disk_io_thread.cpp</in>
+        <in>entry.cpp</in>
+        <in>enum_net.cpp</in>
+        <in>error_code.cpp</in>
+        <in>escape_string.cpp</in>
+        <in>file.cpp</in>
+        <in>file_pool.cpp</in>
+        <in>file_storage.cpp</in>
+        <in>gzip.cpp</in>
+        <in>http_connection.cpp</in>
+        <in>http_parser.cpp</in>
+        <in>http_stream.cpp</in>
+        <in>http_tracker_connection.cpp</in>
+        <in>identify_client.cpp</in>
+        <in>instantiate_connection.cpp</in>
+        <in>ip_filter.cpp</in>
+        <in>lazy_bdecode.cpp</in>
+        <in>logger.cpp</in>
+        <in>lsd.cpp</in>
+        <in>magnet_uri.cpp</in>
+        <in>metadata_transfer.cpp</in>
+        <in>natpmp.cpp</in>
+        <in>parse_url.cpp</in>
+        <in>pe_crypto.cpp</in>
+        <in>peer_connection.cpp</in>
+        <in>piece_picker.cpp</in>
+        <in>policy.cpp</in>
+        <in>session.cpp</in>
+        <in>session_impl.cpp</in>
+        <in>sha1.cpp</in>
+        <in>smart_ban.cpp</in>
+        <in>socks4_stream.cpp</in>
+        <in>socks5_stream.cpp</in>
+        <in>stat.cpp</in>
+        <in>storage.cpp</in>
+        <in>torrent.cpp</in>
+        <in>torrent_handle.cpp</in>
+        <in>torrent_info.cpp</in>
+        <in>tracker_manager.cpp</in>
+        <in>udp_socket.cpp</in>
+        <in>udp_tracker_connection.cpp</in>
+        <in>upnp.cpp</in>
+        <in>ut_metadata.cpp</in>
+        <in>ut_pex.cpp</in>
+        <in>web_peer_connection.cpp</in>
+      </df>
+      <df name="test">
+        <in>main.cpp</in>
+        <in>setup_transfer.cpp</in>
+        <in>setup_transfer.hpp</in>
+        <in>test.hpp</in>
+        <in>test_bandwidth_limiter.cpp</in>
+        <in>test_bencoding.cpp</in>
+        <in>test_buffer.cpp</in>
+        <in>test_fast_extension.cpp</in>
+        <in>test_hasher.cpp</in>
+        <in>test_http_connection.cpp</in>
+        <in>test_ip_filter.cpp</in>
+        <in>test_lsd.cpp</in>
+        <in>test_metadata_extension.cpp</in>
+        <in>test_pe_crypto.cpp</in>
+        <in>test_pex.cpp</in>
+        <in>test_piece_picker.cpp</in>
+        <in>test_primitives.cpp</in>
+        <in>test_storage.cpp</in>
+        <in>test_swarm.cpp</in>
+        <in>test_torrent.cpp</in>
+        <in>test_transfer.cpp</in>
+        <in>test_web_seed.cpp</in>
+      </df>
+      <df name="zlib">
+        <in>adler32.c</in>
+        <in>compress.c</in>
+        <in>crc32.c</in>
+        <in>crc32.h</in>
+        <in>deflate.c</in>
+        <in>deflate.h</in>
+        <in>gzio.c</in>
+        <in>infback.c</in>
+        <in>inffast.c</in>
+        <in>inffast.h</in>
+        <in>inffixed.h</in>
+        <in>inflate.c</in>
+        <in>inflate.h</in>
+        <in>inftrees.c</in>
+        <in>inftrees.h</in>
+        <in>trees.c</in>
+        <in>trees.h</in>
+        <in>uncompr.c</in>
+        <in>zconf.h</in>
+        <in>zlib.h</in>
+        <in>zutil.c</in>
+        <in>zutil.h</in>
+      </df>
+    </df>
+    <logicalFolder name="ExternalFiles"
+                   displayName="Important Files"
+                   projectFiles="false"
+                   kind="IMPORTANT_FILES_FOLDER">
+      <itemPath>Makefile</itemPath>
+      <itemPath>configure</itemPath>
+    </logicalFolder>
+  </logicalFolder>
+  <sourceFolderFilter>^(nbproject)$</sourceFolderFilter>
+  <sourceRootList>
+    <Elem>.</Elem>
+  </sourceRootList>
+  <projectmakefile>Makefile</projectmakefile>
+  <confs>
+    <conf name="Default" type="0">
+      <toolsSet>
+        <remote-sources-mode>LOCAL_SOURCES</remote-sources-mode>
+        <compilerSet>default</compilerSet>
+      </toolsSet>
+      <makefileType>
+        <makeTool>
+          <buildCommandWorkingDir>.</buildCommandWorkingDir>
+          <buildCommand>${MAKE} -f Makefile</buildCommand>
+          <cleanCommand>${MAKE} -f Makefile clean</cleanCommand>
+          <executablePath></executablePath>
+        </makeTool>
+      </makefileType>
+      <item path="bindings/python/src/alert.cpp" ex="false" tool="1" flavor="0">
+        <ccTool>
+          <incDir>
+            <pElem>include/libtorrent</pElem>
+          </incDir>
+        </ccTool>
+      </item>
+      <item path="bindings/python/src/create_torrent.cpp"
+            ex="false"
+            tool="1"
+            flavor="0">
+        <ccTool>
+          <incDir>
+            <pElem>include/libtorrent</pElem>
+          </incDir>
+        </ccTool>
+      </item>
+      <item path="bindings/python/src/entry.cpp" ex="false" tool="1" flavor="0">
+        <ccTool>
+          <incDir>
+            <pElem>include/libtorrent</pElem>
+          </incDir>
+        </ccTool>
+      </item>
+      <item path="bindings/python/src/extensions.cpp" ex="false" tool="1" flavor="0">
+        <ccTool>
+          <incDir>
+            <pElem>include/libtorrent</pElem>
+          </incDir>
+        </ccTool>
+      </item>
+      <item path="bindings/python/src/ip_filter.cpp" ex="false" tool="1" flavor="0">
+        <ccTool>
+          <incDir>
+            <pElem>include/libtorrent</pElem>
+          </incDir>
+        </ccTool>
+      </item>
+      <item path="bindings/python/src/magnet_uri.cpp" ex="false" tool="1" flavor="0">
+        <ccTool>
+          <incDir>
+            <pElem>include/libtorrent</pElem>
+          </incDir>
+        </ccTool>
+      </item>
+      <item path="bindings/python/src/peer_info.cpp" ex="false" tool="1" flavor="0">
+        <ccTool>
+          <incDir>
+            <pElem>include/libtorrent</pElem>
+          </incDir>
+        </ccTool>
+      </item>
+      <item path="bindings/python/src/session.cpp" ex="false" tool="1" flavor="0">
+        <ccTool>
+          <incDir>
+            <pElem>include/libtorrent</pElem>
+          </incDir>
+        </ccTool>
+      </item>
+      <item path="bindings/python/src/session_settings.cpp"
+            ex="false"
+            tool="1"
+            flavor="0">
+        <ccTool>
+          <incDir>
+            <pElem>include/libtorrent</pElem>
+          </incDir>
+        </ccTool>
+      </item>
+      <item path="bindings/python/src/torrent.cpp" ex="false" tool="1" flavor="0">
+        <ccTool>
+          <incDir>
+            <pElem>include/libtorrent</pElem>
+          </incDir>
+        </ccTool>
+      </item>
+      <item path="bindings/python/src/torrent_handle.cpp"
+            ex="false"
+            tool="1"
+            flavor="0">
+        <ccTool>
+          <incDir>
+            <pElem>include/libtorrent</pElem>
+          </incDir>
+        </ccTool>
+      </item>
+      <item path="bindings/python/src/torrent_info.cpp"
+            ex="false"
+            tool="1"
+            flavor="0">
+        <ccTool>
+          <incDir>
+            <pElem>include/libtorrent</pElem>
+          </incDir>
+        </ccTool>
+      </item>
+      <item path="bindings/python/src/torrent_status.cpp"
+            ex="false"
+            tool="1"
+            flavor="0">
+        <ccTool>
+          <incDir>
+            <pElem>include/libtorrent</pElem>
+          </incDir>
+        </ccTool>
+      </item>
+      <folder path="libtorrent-rasterbar-0.14.7/examples">
+        <ccTool>
+          <incDir>
+            <pElem>include/libtorrent</pElem>
+          </incDir>
+        </ccTool>
+      </folder>
+      <item path="src/broadcast_socket.cpp" ex="false" tool="1" flavor="0">
+        <ccTool>
+          <incDir>
+            <pElem>include/libtorrent</pElem>
+          </incDir>
+        </ccTool>
+      </item>
+      <item path="src/bt_peer_connection.cpp" ex="false" tool="1" flavor="0">
+        <ccTool>
+          <incDir>
+            <pElem>include/libtorrent</pElem>
+          </incDir>
+        </ccTool>
+      </item>
+      <item path="src/connection_queue.cpp" ex="false" tool="1" flavor="0">
+        <ccTool>
+          <incDir>
+            <pElem>include/libtorrent</pElem>
+          </incDir>
+        </ccTool>
+      </item>
+      <item path="src/create_torrent.cpp" ex="false" tool="1" flavor="0">
+        <ccTool>
+          <incDir>
+            <pElem>include/libtorrent</pElem>
+          </incDir>
+        </ccTool>
+      </item>
+      <item path="src/disk_buffer_holder.cpp" ex="false" tool="1" flavor="0">
+        <ccTool>
+          <incDir>
+            <pElem>include/libtorrent</pElem>
+          </incDir>
+        </ccTool>
+      </item>
+      <item path="src/disk_io_thread.cpp" ex="false" tool="1" flavor="0">
+        <ccTool>
+          <incDir>
+            <pElem>include/libtorrent</pElem>
+          </incDir>
+        </ccTool>
+      </item>
+      <item path="src/enum_net.cpp" ex="false" tool="1" flavor="0">
+        <ccTool>
+          <incDir>
+            <pElem>include/libtorrent</pElem>
+          </incDir>
+        </ccTool>
+      </item>
+      <item path="src/file.cpp" ex="false" tool="1" flavor="0">
+        <ccTool>
+          <incDir>
+            <pElem>include/libtorrent</pElem>
+          </incDir>
+        </ccTool>
+      </item>
+      <item path="src/file_pool.cpp" ex="false" tool="1" flavor="0">
+        <ccTool>
+          <incDir>
+            <pElem>include/libtorrent</pElem>
+          </incDir>
+        </ccTool>
+      </item>
+      <item path="src/http_connection.cpp" ex="false" tool="1" flavor="0">
+        <ccTool>
+          <incDir>
+            <pElem>include/libtorrent</pElem>
+          </incDir>
+        </ccTool>
+      </item>
+      <item path="src/http_stream.cpp" ex="false" tool="1" flavor="0">
+        <ccTool>
+          <incDir>
+            <pElem>include/libtorrent</pElem>
+          </incDir>
+        </ccTool>
+      </item>
+      <item path="src/http_tracker_connection.cpp" ex="false" tool="1" flavor="0">
+        <ccTool>
+          <incDir>
+            <pElem>include/libtorrent</pElem>
+          </incDir>
+        </ccTool>
+      </item>
+      <item path="src/instantiate_connection.cpp" ex="false" tool="1" flavor="0">
+        <ccTool>
+          <incDir>
+            <pElem>include/libtorrent</pElem>
+          </incDir>
+        </ccTool>
+      </item>
+      <item path="src/ip_filter.cpp" ex="false" tool="1" flavor="0">
+        <ccTool>
+          <incDir>
+            <pElem>include/libtorrent</pElem>
+          </incDir>
+        </ccTool>
+      </item>
+      <item path="src/kademlia/closest_nodes.cpp" ex="false" tool="1" flavor="0">
+        <ccTool>
+          <incDir>
+            <pElem>include/libtorrent</pElem>
+          </incDir>
+        </ccTool>
+      </item>
+      <item path="src/kademlia/dht_tracker.cpp" ex="false" tool="1" flavor="0">
+        <ccTool>
+          <incDir>
+            <pElem>include/libtorrent</pElem>
+          </incDir>
+        </ccTool>
+      </item>
+      <item path="src/kademlia/find_data.cpp" ex="false" tool="1" flavor="0">
+        <ccTool>
+          <incDir>
+            <pElem>include/libtorrent</pElem>
+          </incDir>
+        </ccTool>
+      </item>
+      <item path="src/kademlia/node.cpp" ex="false" tool="1" flavor="0">
+        <ccTool>
+          <incDir>
+            <pElem>include/libtorrent</pElem>
+          </incDir>
+        </ccTool>
+      </item>
+      <item path="src/kademlia/refresh.cpp" ex="false" tool="1" flavor="0">
+        <ccTool>
+          <incDir>
+            <pElem>include/libtorrent</pElem>
+          </incDir>
+        </ccTool>
+      </item>
+      <item path="src/kademlia/routing_table.cpp" ex="false" tool="1" flavor="0">
+        <ccTool>
+          <incDir>
+            <pElem>include/libtorrent</pElem>
+          </incDir>
+        </ccTool>
+      </item>
+      <item path="src/kademlia/rpc_manager.cpp" ex="false" tool="1" flavor="0">
+        <ccTool>
+          <incDir>
+            <pElem>include/libtorrent</pElem>
+          </incDir>
+        </ccTool>
+      </item>
+      <item path="src/kademlia/traversal_algorithm.cpp"
+            ex="false"
+            tool="1"
+            flavor="0">
+        <ccTool>
+          <incDir>
+            <pElem>include/libtorrent</pElem>
+          </incDir>
+        </ccTool>
+      </item>
+      <item path="src/logger.cpp" ex="false" tool="1" flavor="0">
+        <ccTool>
+          <incDir>
+            <pElem>include/libtorrent</pElem>
+          </incDir>
+        </ccTool>
+      </item>
+      <item path="src/lsd.cpp" ex="false" tool="1" flavor="0">
+        <ccTool>
+          <incDir>
+            <pElem>include/libtorrent</pElem>
+          </incDir>
+        </ccTool>
+      </item>
+      <item path="src/magnet_uri.cpp" ex="false" tool="1" flavor="0">
+        <ccTool>
+          <incDir>
+            <pElem>include/libtorrent</pElem>
+          </incDir>
+        </ccTool>
+      </item>
+      <item path="src/metadata_transfer.cpp" ex="false" tool="1" flavor="0">
+        <ccTool>
+          <incDir>
+            <pElem>include/libtorrent</pElem>
+          </incDir>
+        </ccTool>
+      </item>
+      <item path="src/natpmp.cpp" ex="false" tool="1" flavor="0">
+        <ccTool>
+          <incDir>
+            <pElem>include/libtorrent</pElem>
+          </incDir>
+        </ccTool>
+      </item>
+      <item path="src/peer_connection.cpp" ex="false" tool="1" flavor="0">
+        <ccTool>
+          <incDir>
+            <pElem>include/libtorrent</pElem>
+          </incDir>
+        </ccTool>
+      </item>
+      <item path="src/piece_picker.cpp" ex="false" tool="1" flavor="0">
+        <ccTool>
+          <incDir>
+            <pElem>include/libtorrent</pElem>
+          </incDir>
+        </ccTool>
+      </item>
+      <item path="src/policy.cpp" ex="false" tool="1" flavor="0">
+        <ccTool>
+          <incDir>
+            <pElem>include/libtorrent</pElem>
+          </incDir>
+        </ccTool>
+      </item>
+      <item path="src/session.cpp" ex="false" tool="1" flavor="0">
+        <ccTool>
+          <incDir>
+            <pElem>include/libtorrent</pElem>
+          </incDir>
+        </ccTool>
+      </item>
+      <item path="src/session_impl.cpp" ex="false" tool="1" flavor="0">
+        <ccTool>
+          <incDir>
+            <pElem>include/libtorrent</pElem>
+          </incDir>
+        </ccTool>
+      </item>
+      <item path="src/smart_ban.cpp" ex="false" tool="1" flavor="0">
+        <ccTool>
+          <incDir>
+            <pElem>include/libtorrent</pElem>
+          </incDir>
+        </ccTool>
+      </item>
+      <item path="src/socks4_stream.cpp" ex="false" tool="1" flavor="0">
+        <ccTool>
+          <incDir>
+            <pElem>include/libtorrent</pElem>
+          </incDir>
+        </ccTool>
+      </item>
+      <item path="src/socks5_stream.cpp" ex="false" tool="1" flavor="0">
+        <ccTool>
+          <incDir>
+            <pElem>include/libtorrent</pElem>
+          </incDir>
+        </ccTool>
+      </item>
+      <item path="src/storage.cpp" ex="false" tool="1" flavor="0">
+        <ccTool>
+          <incDir>
+            <pElem>include/libtorrent</pElem>
+          </incDir>
+        </ccTool>
+      </item>
+      <item path="src/torrent.cpp" ex="false" tool="1" flavor="0">
+        <ccTool>
+          <incDir>
+            <pElem>include/libtorrent</pElem>
+          </incDir>
+        </ccTool>
+      </item>
+      <item path="src/torrent_handle.cpp" ex="false" tool="1" flavor="0">
+        <ccTool>
+          <incDir>
+            <pElem>include/libtorrent</pElem>
+          </incDir>
+        </ccTool>
+      </item>
+      <item path="src/torrent_info.cpp" ex="false" tool="1" flavor="0">
+        <ccTool>
+          <incDir>
+            <pElem>include/libtorrent</pElem>
+          </incDir>
+        </ccTool>
+      </item>
+      <item path="src/tracker_manager.cpp" ex="false" tool="1" flavor="0">
+        <ccTool>
+          <incDir>
+            <pElem>include/libtorrent</pElem>
+          </incDir>
+        </ccTool>
+      </item>
+      <item path="src/udp_socket.cpp" ex="false" tool="1" flavor="0">
+        <ccTool>
+          <incDir>
+            <pElem>include/libtorrent</pElem>
+          </incDir>
+        </ccTool>
+      </item>
+      <item path="src/udp_tracker_connection.cpp" ex="false" tool="1" flavor="0">
+        <ccTool>
+          <incDir>
+            <pElem>include/libtorrent</pElem>
+          </incDir>
+        </ccTool>
+      </item>
+      <item path="src/upnp.cpp" ex="false" tool="1" flavor="0">
+        <ccTool>
+          <incDir>
+            <pElem>include/libtorrent</pElem>
+          </incDir>
+        </ccTool>
+      </item>
+      <item path="src/ut_metadata.cpp" ex="false" tool="1" flavor="0">
+        <ccTool>
+          <incDir>
+            <pElem>include/libtorrent</pElem>
+          </incDir>
+        </ccTool>
+      </item>
+      <item path="src/ut_pex.cpp" ex="false" tool="1" flavor="0">
+        <ccTool>
+          <incDir>
+            <pElem>include/libtorrent</pElem>
+          </incDir>
+        </ccTool>
+      </item>
+      <item path="src/web_peer_connection.cpp" ex="false" tool="1" flavor="0">
+        <ccTool>
+          <incDir>
+            <pElem>include/libtorrent</pElem>
+          </incDir>
+        </ccTool>
+      </item>
+      <item path="test/setup_transfer.cpp" ex="false" tool="1" flavor="0">
+        <ccTool>
+          <incDir>
+            <pElem>include/libtorrent</pElem>
+          </incDir>
+        </ccTool>
+      </item>
+      <item path="test/test_bandwidth_limiter.cpp" ex="false" tool="1" flavor="0">
+        <ccTool>
+          <incDir>
+            <pElem>include/libtorrent</pElem>
+          </incDir>
+        </ccTool>
+      </item>
+      <item path="test/test_buffer.cpp" ex="false" tool="1" flavor="0">
+        <ccTool>
+          <incDir>
+            <pElem>include/libtorrent</pElem>
+          </incDir>
+        </ccTool>
+      </item>
+      <item path="test/test_fast_extension.cpp" ex="false" tool="1" flavor="0">
+        <ccTool>
+          <incDir>
+            <pElem>include/libtorrent</pElem>
+          </incDir>
+        </ccTool>
+      </item>
+      <item path="test/test_http_connection.cpp" ex="false" tool="1" flavor="0">
+        <ccTool>
+          <incDir>
+            <pElem>include/libtorrent</pElem>
+          </incDir>
+        </ccTool>
+      </item>
+      <item path="test/test_ip_filter.cpp" ex="false" tool="1" flavor="0">
+        <ccTool>
+          <incDir>
+            <pElem>include/libtorrent</pElem>
+          </incDir>
+        </ccTool>
+      </item>
+      <item path="test/test_lsd.cpp" ex="false" tool="1" flavor="0">
+        <ccTool>
+          <incDir>
+            <pElem>include/libtorrent</pElem>
+          </incDir>
+        </ccTool>
+      </item>
+      <item path="test/test_metadata_extension.cpp" ex="false" tool="1" flavor="0">
+        <ccTool>
+          <incDir>
+            <pElem>include/libtorrent</pElem>
+          </incDir>
+        </ccTool>
+      </item>
+      <item path="test/test_pe_crypto.cpp" ex="false" tool="1" flavor="0">
+        <ccTool>
+          <incDir>
+            <pElem>include/libtorrent</pElem>
+          </incDir>
+        </ccTool>
+      </item>
+      <item path="test/test_pex.cpp" ex="false" tool="1" flavor="0">
+        <ccTool>
+          <incDir>
+            <pElem>include/libtorrent</pElem>
+          </incDir>
+        </ccTool>
+      </item>
+      <item path="test/test_piece_picker.cpp" ex="false" tool="1" flavor="0">
+        <ccTool>
+          <incDir>
+            <pElem>include/libtorrent</pElem>
+          </incDir>
+        </ccTool>
+      </item>
+      <item path="test/test_primitives.cpp" ex="false" tool="1" flavor="0">
+        <ccTool>
+          <incDir>
+            <pElem>include/libtorrent</pElem>
+          </incDir>
+        </ccTool>
+      </item>
+      <item path="test/test_storage.cpp" ex="false" tool="1" flavor="0">
+        <ccTool>
+          <incDir>
+            <pElem>include/libtorrent</pElem>
+          </incDir>
+        </ccTool>
+      </item>
+      <item path="test/test_swarm.cpp" ex="false" tool="1" flavor="0">
+        <ccTool>
+          <incDir>
+            <pElem>include/libtorrent</pElem>
+          </incDir>
+        </ccTool>
+      </item>
+      <item path="test/test_torrent.cpp" ex="false" tool="1" flavor="0">
+        <ccTool>
+          <incDir>
+            <pElem>include/libtorrent</pElem>
+          </incDir>
+        </ccTool>
+      </item>
+      <item path="test/test_transfer.cpp" ex="false" tool="1" flavor="0">
+        <ccTool>
+          <incDir>
+            <pElem>include/libtorrent</pElem>
+          </incDir>
+        </ccTool>
+      </item>
+      <item path="test/test_web_seed.cpp" ex="false" tool="1" flavor="0">
+        <ccTool>
+          <incDir>
+            <pElem>include/libtorrent</pElem>
+          </incDir>
+        </ccTool>
+      </item>
+    </conf>
+  </confs>
+</configurationDescriptor>

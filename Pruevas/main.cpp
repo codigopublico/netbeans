@@ -25,15 +25,21 @@ int main(int argc, char** argv) {
     return 0;
     //Prueva de bucles con caracteres ....
     string vocales;
-    char l[] = "a";
-    vocales[0] = "a";
-    std::cout << vocales[0]; //tengo que mirar lo de las constantes.
+    //char l[] = "a";
+    //vocales[0] = "a";
+    //std::cout << vocales[0]; //tengo que mirar lo de las constantes.
     /* for(int i = 0; i < 4; i++ ){
         if (l == vocalr[i]){
             break;
             std::cout << "Es una vocal";
         }
     }*/ //falta saber como se opera con caracteres.
+    int a = 0;
+    if(1%2){
+        a = 1;
+        std::cout << "a";
+    }
+    std::cout << "\n" <<  a <<"\n";
     
 }
 

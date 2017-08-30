@@ -38,6 +38,7 @@ void doSomething(char charArray[])
 
     // now we know the array size, so we can do some thing
 }
+
 void p1(){
     int *p;
     int ID[] = {1, 2, 3, 4, 5, 6 };
@@ -50,8 +51,18 @@ void p2(){
     string dia[] = { "Domingo", "Lunes", "Martes", "Miercoles", "Jueves", "Viernes", "Sabado" };
     imprime(dia);
 }
+void p3(){
+const string  letra[] = {"letra", "jodida"}; 
+ for(int i = 0; i < 2; i++){
+     for (int ii = 0; ii < 1; ii++){
+         std::cout  << letra[i];
+     }
+     std::cout << "\n";
+ }
+}
 int main(int argc, char** argv) {
-    p1();
-    p2();
+    //p1();
+    //p2();
+    p3();
 }
 
